@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+#kv-body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    line-height: 1.7;
+    background-color: var(--dark);
+    color: var(--light);
+}
+.main-header{
+    display: block;
+    color: white;
+    padding: 60px 0;
+
+}
+.main{
+    display: block;
+    color: white;
+    padding: 20px 0;
+
+
+}
+.kv-logo{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 0px;
+    background-color:#190727;
+    padding: 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    text-align: center;
+    color: white;
+
+}
+.kv-logo i{
+    color: rgb(99, 38, 99);
+    margin-left:10px ;
+}
+.kv-logo img{
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 0px;
+    border-radius:90px ;
+}
+.kv-nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(68, 33, 68, 0.85);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.kv-nav-bar li {
+  list-style: none;
+}
+.kv-nav-bar li a {
+  color: white;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition:0.3s ease, transform 0.3s ease;
+}
+.kv-nav-bar li a:hover {
+  background-color: var(--accent);
+  border-radius: 20px;
+  transform: translateY(-2px);
+}
+.kv-orbital-section {
+  padding: 90px 20px;
+  background: radial-gradient(circle at top, #14162e, #060713);
+  color: #fff;
+  text-align: center;
+}
+
+.kv-orbital-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.kv-orbital-section h2 {
+  font-size: 36px;
+  color: #ffdd00;
+  margin-bottom: 15px;
+}
+
+.kv-orbital-intro {
+  color: #ccc;
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.kv-orbital-card {
+  background: rgba(26, 27, 43, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.kv-orbital-icon {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.kv-orbital-desc {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Table */
+.kv-orbital-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.kv-orbital-table th,
+.kv-orbital-table td {
+  padding: 12px;
+  border: 1px solid #3a3b55;
+}
+
+.kv-orbital-table th {
+  background: #1a1b2b;
+  color: #ffdd00;
+}
+
+.kv-orbital-table td {
+  background: #24253b;
+  color: #ccc;
+}
+
+/* Button */
+.kv-orbital-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: #ffdd00;
+  color: #0b0c1a;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.kv-orbital-btn:hover {
+  background: #e6c200;
+  transform: translateY(-4px);
+}
