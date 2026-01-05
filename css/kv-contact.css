@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --primary: #632679;
+  --secondary: #ae96b2;
+  --dark: #1c0538;
+  --light: #f4eef7;
+  --accent: #aa50d4;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -184,4 +192,12 @@ html{
   .kv-contact-grid {
     grid-template-columns: 1fr;
   }
+}
+/* Footer */
+.kv-footer-section {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1d0837;
+    color: #f4eef7;
+    font-size: 14px;
 }
