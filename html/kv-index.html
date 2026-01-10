@@ -1,202 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Home | zeroGravity</title>
-  <link rel="stylesheet" href="../css/kv-style.css">
-  <link rel="icon" href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" type="image/x-icon">
-</head>
-<body id="kv-body">
-<header>
-  <!-- Navi -->
-  <nav class="container">
-            <div class="kv-logo">
-                <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
-                <p><i>Z</i>ero<i>G</i>ravity</p>
-            </div>
-        </nav>
-        <ul class="kv-nav-bar">
-            <li><a href="kv-index.html">Home</a></li>
-            <li><a href="kv-about.html">About Us</a></li>
-            <li><a href="kv-services.html">Services</a></li>
-            <li><a href="kv-gallery.html" >Gallery</a></li>
-            <li><a href="kv-blog.html" >Space Blog</a></li>
-            <li><a href="kv-history.html">History</a></li>
-            <li><a href="kv-team.html">Team</a></li>
-            <li><a href="kv-faq.html">FAQ</a></li>
-            <li><a href="kv-contact.html">Contact Us</a></li>
-            <li><a href="kv-policies.html" >Policies</a></li>
-        </ul>
-</header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | zeroGravity</title>
+    <link rel="stylesheet" href="../css/kv-style.css" />
+    <link
+      rel="icon"
+      href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png"
+      type="image/x-icon"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+  </head>
+  <body id="kv">
+  <header>
+    <nav class="container kv-nav-container">
+      <div class="kv-logo">
+        <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
+        <p><i>Z</i>ero<i>G</i>ravity</p>
+      </div>
+
+      <!-- Burger menu për mobile -->
+      <div class="kv-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="kv-nav-bar">
+        <li><a href="kv-index.html">Home</a></li>
+        <li><a href="kv-about.html">About Us</a></li>
+
+        <!-- Dropdown Services -->
+        <li class="kv-dropdown">
+          <a href="kv-services.html">Services ▾</a>
+          <ul class="kv-dropdown-menu">
+            <li><a href="kv-suborbital.html">Suborbital Flights</a></li>
+            <li><a href="kv-orbital.html">Orbital Missions</a></li>
+            <li><a href="kv-space.html">Space Tourism</a></li>
+            <li><a href="kv-education.html">Education Programs</a></li>
+          </ul>
+        </li>
+
+        <li><a href="kv-gallery.html">Gallery</a></li>
+        <li><a href="kv-blog.html">Space Blog</a></li>
+        <li><a href="kv-history.html">History</a></li>
+        <li><a href="kv-team.html">Team</a></li>
+        <li><a href="kv-faq.html">FAQ</a></li>
+        <li><a href="kv-contact.html">Contact Us</a></li>
+        <li><a href="kv-policies.html">Policies</a></li>
+      </ul>
+    </nav>
+  </header>
+
     <main>
-       <!-- Pjesa e heros -->
-        <section class="kv-hero-section">
-          <h1>Welcome to <i>Z</i>ero<i>G</i>ravity</h1>
-          <p><i>Experience the thrill of space travel with us.Your gateway to the stars. Explore the universe with us.</i> </p>
-          <a href="kv-services.html" class="cta-button">Explore Our Services</a>
-        </section>
-        <!-- About Section -->
-        <section class="kv-about-section">
-          <h2>About Us</h2>
-          <p>At zeroGravity, we are dedicated to providing unparalleled space exploration experiences. Our team of experts is passionate about pushing the boundaries of human potential and making space travel accessible to all.</p>
-          <div class="kv-about-image">
-            <img src="../images/teleskop.jpg" alt="About Us Image" width="300" height="200">
-            <img src="../images/exploration-nature-star-field-with-telescope-generated-by-ai.jpg" alt="About Us Image" width="300" height="200">
-            <img src="../images/one-person-space-suit-explores-galaxy-generated-by-ai.jpg" alt="About Us Image" width="300" height="200">
-            <img src="../images/toka.jpg" alt="About Us Image" width="300" height="200">
+      <!-- Pjesa e heros -->
+      <section class="kv-hero-section">
+        <h1>Welcome to <i>Z</i>ero<i>G</i>ravity</h1>
+        <p>
+          <i
+            >Experience the thrill of space travel with us.Your gateway to the
+            stars. Explore the universe with us.</i
+          >
+        </p>
+        <a href="kv-services.html" class="cta-button">Explore Our Services</a>
+      </section>
+      <!-- About Section -->
+      <section class="kv-about-section">
+        <h2>About Us</h2>
+        <p>
+          At zeroGravity, we are dedicated to providing unparalleled space
+          exploration experiences. Our team of experts is passionate about
+          pushing the boundaries of human potential and making space travel
+          accessible to all.
+        </p>
+        <div class="kv-about-image">
+          <img
+            src="../images/teleskop.jpg"
+            alt="About Us Image"
+            width="300"
+            height="200"
+          />
+          <img
+            src="../images/exploration-nature-star-field-with-telescope-generated-by-ai.jpg"
+            alt="About Us Image"
+            width="300"
+            height="200"
+          />
+          <img
+            src="../images/one-person-space-suit-explores-galaxy-generated-by-ai.jpg"
+            alt="About Us Image"
+            width="300"
+            height="200"
+          />
+          <img
+            src="../images/toka.jpg"
+            alt="About Us Image"
+            width="300"
+            height="200"
+          />
+        </div>
+        <a href="kv-about.html" class="kv-learn-more-button"
+          >Learn More About Us</a
+        >
+      </section>
+      <!-- Service section -->
+      <section class="kv-services-section kv-services-bg">
+        <h2>Our Services</h2>
+        <div class="kv-services-container">
+          <div class="kv-service-card-1">
+            <div class="icon">🚀</div>
+            <h3>Suborbital Flights</h3>
+            <p>Experience weightlessness and see Earth from space.</p>
           </div>
-            <a href="kv-about.html" class="kv-learn-more-button">Learn More About Us</a>
-          </section>
-        <!-- Service section -->
-        <section class="kv-services-section kv-services-bg">
-          <h2>Our Services</h2>
-          <div class="kv-services-container">
-            <div class="kv-service-card-1">
-              <div class="icon">🚀</div>
-              <h3>Suborbital Flights</h3>
-              <p>Experience weightlessness and see Earth from space.</p>
-            </div>
-            <div class="kv-service-card-2">
-              <div class="icon">🛰️</div>
-              <h3>Orbital Missions</h3>
-              <p>Join professional missions orbiting our planet.</p>
-            </div>
-            <div class="kv-service-card-3">
-              <div class="icon">🌌</div>
-              <h3>Space Tourism</h3>
-              <p>Luxury space travel for adventurous explorers.</p>
-            </div>
-            <div class="kv-service-card-4">
-              <div class="icon">📚</div>
-              <h3>Education Programs</h3>
-              <p>Learn astronomy and space science with experts.</p>
-            </div>
+          <div class="kv-service-card-2">
+            <div class="icon">🛰️</div>
+            <h3>Orbital Missions</h3>
+            <p>Join professional missions orbiting our planet.</p>
           </div>
-          <a href="kv-services.html" class="kv-view-services-button">View All Services</a>
-        </section>
-        <!-- Space section -->
-        <section class="kv-space-section">
-          <h2>Space Blog</h2>
-          <p class="kv-space-intro">
-            Stay updated with the latest news, discoveries, and stories from the world of space exploration.</p>
-            <div class="kv-space-blog-container">
-              <article class="kv-space-blog-card">
-                <img src="../images/one-person-space-suit-explores-galaxy-generated-by-ai.jpg" alt="Astronaut in space" width="100px" height="auto">
-                <h3>Life in Zero Gravity</h3>
-                <p> Discover how astronauts live, eat, and sleep while orbiting Earth in a zero-gravity environment.</p>
-                <a href="kv-blog.html" class="kv-view-news-button">Read More</a>
-              </article>
-              <article class="kv-space-blog-card">
-                <img src="../images/pexels-spacex-586030.jpg" alt="Mars planet" width="100px" height="auto">
-                <h3>Journey to Mars</h3>
-                <p> Mars is the next frontier. Learn about upcoming missions and challenges of traveling to the red planet.</p>
-                <a href="kv-blog.html" class="kv-view-news-button">Read More</a>
-             </article>
-            <article class="kv-space-blog-card">
-              <img src="../images/astral-concept-wallpaper (1).jpg" alt="Galaxy" width="100px" height="">
-              <h3>Exploring Distant Galaxies</h3>
-              <p>A look into deep space discoveries and the mysteries of galaxies far beyond our solar system.</p>
-              <a href="kv-blog.html" class="kv-view-news-button">Read More</a>
-            </article>
+          <div class="kv-service-card-3">
+            <div class="icon">🌌</div>
+            <h3>Space Tourism</h3>
+            <p>Luxury space travel for adventurous explorers.</p>
           </div>
-        </section>
-        <!-- Team Section -->
-         <section class="kv-team-section">
-           <h2>Our Team</h2>
-           <p class="kv-team-intro">
-            Meet the passionate professionals behind ZeroGravity.</p>
-            <div class="kv-team-container">
-              <div class="kv-team-card">
-                <img src="../images/man.jpg" alt="Team Member 1" width="350" height="auto">
-                <h3>Dr. Alex Orion</h3>
-                <p>Astronaut</p>
-              </div>
-              <div class="kv-team-card">
-                <img src="../images/qika.jpg" alt="Team Member 2" width="350" height="auto">
-                <h3>Elena Nova</h3>
-                <p>Mission Engineer</p>
-              </div>
-              <div class="kv-team-card">
-                <img src="../images/njeri.jpg" alt="Team Member 3" width="290" height="auto">
-                <h3>Mark Stellar</h3>
-                <p>Astrophysicist</p>
-              </div>
-              <div class="kv-team-card">
-                <img src="../images/IMG_4058.jpg" alt="Team Member 4" width="340" height="auto">
-                <h3>Pranvera Hyseni</h3>
-                <p>Space Researcher</p>
-              </div>
-            </div>
-            <a href="kv-team.html" class="kv-more-team-button">View Full Team</a>
-          </section>
-          <!-- Contact Section -->
-        <section class="kv-contact-section">
-          <h2>Get in Touch</h2>
-          <p class="kv-contact-intro">
-            Have questions about space missions, services, or collaborations?
-            Our team is ready to help you.
+          <div class="kv-service-card-4">
+            <div class="icon">📚</div>
+            <h3>Education Programs</h3>
+            <p>Learn astronomy and space science with experts.</p>
+          </div>
+        </div>
+        <a href="kv-services.html" class="kv-view-services-button"
+          >View All Services</a
+        >
+      </section>
+      <!-- Space section -->
+      <section class="kv-space-section">
+        <h2>Space Blog</h2>
+        <p class="kv-space-intro">
+          Stay updated with the latest news, discoveries, and stories from the
+          world of space exploration.
+        </p>
+        <div class="kv-space-blog-container">
+          <article class="kv-space-blog-card">
+            <img
+              src="../images/one-person-space-suit-explores-galaxy-generated-by-ai.jpg"
+              alt="Astronaut in space"
+              width="100px"
+              height="auto"
+            />
+            <h3>Life in Zero Gravity</h3>
+            <p>
+              Discover how astronauts live, eat, and sleep while orbiting Earth
+              in a zero-gravity environment.
+            </p>
+            <a href="kv-blog.html" class="kv-view-news-button">Read More</a>
+          </article>
+          <article class="kv-space-blog-card">
+            <img
+              src="../images/pexels-spacex-586030.jpg"
+              alt="Mars planet"
+              width="100px"
+              height="auto"
+            />
+            <h3>Journey to Mars</h3>
+            <p>
+              Mars is the next frontier. Learn about upcoming missions and
+              challenges of traveling to the red planet.
+            </p>
+            <a href="kv-blog.html" class="kv-view-news-button">Read More</a>
+          </article>
+          <article class="kv-space-blog-card">
+            <img
+              src="../images/astral-concept-wallpaper (1).jpg"
+              alt="Galaxy"
+              width="100px"
+              height=""
+            />
+            <h3>Exploring Distant Galaxies</h3>
+            <p>
+              A look into deep space discoveries and the mysteries of galaxies
+              far beyond our solar system.
+            </p>
+            <a href="kv-blog.html" class="kv-view-news-button">Read More</a>
+          </article>
+        </div>
+      </section>
+      <section>
+        <!-- curosel section -->
+         <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../images/prani.jpg" class="d-block w-100" alt="..." width="400px" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Space</h5>
+        <p>The universe is extremely vast, mysterious, and constantly expanding everywhere..</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../images/pp.jpg" class="d-block w-100" alt="..." width="400px" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Universe</h5>
+        <p>It contains billions of galaxies, stars, planets, and unknown cosmic phenomena..</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../images/lab.jpg" class="d-block w-100" alt="..." width="400px" height="500px">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Labs</h5>
+        <p>Scientists study the universe to understand its origin, structure, and future.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      </section>
+      <!-- Team Section -->
+      <section class="kv-team-section">
+        <h2>Our Team</h2>
+        <p class="kv-team-intro">
+          Meet the passionate professionals behind ZeroGravity.
+        </p>
+        <div class="kv-team-container">
+          <div class="kv-team-card">
+            <img
+              src="../images/man.jpg"
+              alt="Team Member 1"
+              width="350"
+              height="auto"
+            />
+            <h3>Dr. Alex Orion</h3>
+            <p>Astronaut</p>
+          </div>
+          <div class="kv-team-card">
+            <img
+              src="../images/qika.jpg"
+              alt="Team Member 2"
+              width="350"
+              height="auto"
+            />
+            <h3>Elena Nova</h3>
+            <p>Mission Engineer</p>
+          </div>
+          <div class="kv-team-card">
+            <img
+              src="../images/njeri.jpg"
+              alt="Team Member 3"
+              width="290"
+              height="auto"
+            />
+            <h3>Mark Stellar</h3>
+            <p>Astrophysicist</p>
+          </div>
+          <div class="kv-team-card">
+            <img
+              src="../images/IMG_4058.jpg"
+              alt="Team Member 4"
+              width="340"
+              height="auto"
+            />
+            <h3>Pranvera Hyseni</h3>
+            <p>Space Researcher</p>
+          </div>
+        </div>
+        <a href="kv-team.html" class="kv-more-team-button">View Full Team</a>
+      </section>
+      <!-- Contact Section -->
+      <section class="kv-contact-section">
+        <h2>Get in Touch</h2>
+        <p class="kv-contact-intro">
+          Have questions about space missions, services, or collaborations? Our
+          team is ready to help you.
+        </p>
+        <div class="kv-contact-cards">
+          <div class="kv-contact-card">
+            <h3>Email</h3>
+            <p>info@zerogravity.com</p>
+          </div>
+          <div class="kv-contact-card">
+            <h3>Phone</h3>
+            <p>+383 44 123 456</p>
+          </div>
+          <div class="kv-contact-card">
+            <h3>Location</h3>
+            <p>Space Research Center, Earth Orbit</p>
+          </div>
+        </div>
+        <a href="kv-contact.html" class="kv-contact-us-button">Contact Us</a>
+      </section>
+      <!-- FAQ section -->
+      <section class="kv-faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="kv-faq-preview">
+          <p><strong>How do astronauts sleep in space?</strong></p>
+          <p>
+            They sleep in special sleeping bags attached to spacecraft walls.
           </p>
-          <div class="kv-contact-cards">
-            <div class="kv-contact-card">
-              <h3>Email</h3>
-              <p>info@zerogravity.com</p>
-            </div>
-            <div class="kv-contact-card">
-              <h3>Phone</h3>
-              <p>+383 44 123 456</p>
-            </div>
-            <div class="kv-contact-card">
-              <h3>Location</h3>
-              <p>Space Research Center, Earth Orbit</p>
-            </div>
+        </div>
+        <div class="kv-faq-preview">
+          <p><strong>Is space travel safe?</strong></p>
+          <p>All missions follow strict safety and training protocols.</p>
+        </div>
+        <a href="kv-faq.html" class="kv-view-faq-button">View All FAQ</a>
+      </section>
+      <!-- Policies section -->
+      <section class="kv-policies-section">
+        <h2>Policies & Terms</h2>
+        <p>
+          Learn more about our privacy policy, terms of use, and content rights.
+        </p>
+        <a href="kv-policies.html" class="kv-view-policies-button"
+          >Read Policies</a
+        >
+      </section>
+      <!-- Upper footer -->
+      <section class="kv-footer-section">
+        <div class="kv-footer-container">
+          <div class="kv-footer-column">
+            <h3>ZeroGravity</h3>
+            <p>Exploring space through innovation, education, and discovery.</p>
           </div>
-          <a href="kv-contact.html" class="kv-contact-us-button">Contact Us</a>
-        </section>
-        <!-- FAQ section -->
-         <section class="kv-faq-section">
-          <h2>Frequently Asked Questions</h2>
-          <div class="kv-faq-preview">
-            <p><strong>How do astronauts sleep in space?</strong></p>
-            <p>They sleep in special sleeping bags attached to spacecraft walls.</p>
+          <div class="kv-footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="kv-about.html">About</a></li>
+              <li><a href="kv-services.html">Services</a></li>
+              <li><a href="kv-blog.html">Space Blog</a></li>
+              <li><a href="kv-contact.html">Contact</a></li>
+            </ul>
           </div>
-          <div class="kv-faq-preview">
-            <p><strong>Is space travel safe?</strong></p>
-            <p>All missions follow strict safety and training protocols.</p>
+          <div class="kv-footer-column">
+            <h3>Follow Us</h3>
+            <p>Instagram | Twitter | YouTube</p>
           </div>
-          <a href="kv-faq.html" class="kv-view-faq-button">View All FAQ</a>
-        </section>
-        <!-- Policies section -->
-         <section class="kv-policies-section">
-          <h2>Policies & Terms</h2>
-          <p>Learn more about our privacy policy, terms of use, and content rights.</p>
-          <a href="kv-policies.html" class="kv-view-policies-button">Read Policies</a>
-        </section>
-        <!-- Upper footer -->
-         <section class="kv-footer-section">
-          <div class="kv-footer-container">
-            <div class="kv-footer-column">
-              <h3>ZeroGravity</h3>
-              <p>Exploring space through innovation, education, and discovery.</p>
-            </div>
-            <div class="kv-footer-column">
-              <h3>Quick Links</h3>
-              <ul>
-                <li><a href="kv-about.html">About</a></li>
-                <li><a href="kv-services.html">Services</a></li>
-                <li><a href="kv-blog.html">Space Blog</a></li>
-                <li><a href="kv-contact.html">Contact</a></li>
-              </ul>
-            </div>
-            <div class="kv-footer-column">
-              <h3>Follow Us</h3>
-              <p>Instagram | Twitter | YouTube</p>
-            </div>
-          </div>
-          <!-- footer -->
-           <p class="kv-footer-copy">
-            &copy; 2024 ZeroGravity. All rights reserved.
-          </p>
-        </section>
-      </main>
-    </body>
-    </html>
+        </div>
+        <!-- footer -->
+        <p class="kv-footer-copy">
+          &copy; 2024 ZeroGravity. All rights reserved.
+        </p>
+      </section>
+    </main>
+    <script src="../js/dropdown.js"></script>
+  </body>
+</html>

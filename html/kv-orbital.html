@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orbital | zeroGravity</title>
-    <link rel="stylesheet" href="../css/kv-orbital.css">
-   <link rel="icon" href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="../css/kv-orbital.css" />
+    <link
+      rel="icon"
+      href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png"
+      type="image/x-icon"
+    />
+  </head>
 <body id="kv">
   <header>
-    <nav class="container">
-            <div class="kv-logo">
-                <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
-                <p><i>Z</i>ero<i>G</i>ravity</p>
-            </div>
-        </nav>
-        <ul class="kv-nav-bar">
-            <li><a href="kv-index.html">Home</a></li>
-            <li><a href="kv-about.html">About Us</a></li>
-            <li><a href="kv-services.html">Services</a></li>
-            <li><a href="kv-gallery.html" >Gallery</a></li>
-            <li><a href="kv-blog.html" >Space Blog</a></li>
-            <li><a href="kv-history.html">History</a></li>
-            <li><a href="kv-team.html">Team</a></li>
-            <li><a href="kv-faq.html">FAQ</a></li>
-            <li><a href="kv-contact.html">Contact Us</a></li>
-            <li><a href="kv-policies.html" >Policies</a></li>
-        </ul>
-   </header>
+    <nav class="container kv-nav-container">
+      <div class="kv-logo">
+        <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
+        <p><i>Z</i>ero<i>G</i>ravity</p>
+      </div>
+
+      <!-- Burger menu për mobile -->
+      <div class="kv-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="kv-nav-bar">
+        <li><a href="kv-index.html">Home</a></li>
+        <li><a href="kv-about.html">About Us</a></li>
+
+        <!-- Dropdown Services -->
+        <li class="kv-dropdown">
+          <a href="kv-services.html">Services ▾</a>
+          <ul class="kv-dropdown-menu">
+            <li><a href="kv-suborbital.html">Suborbital Flights</a></li>
+            <li><a href="kv-orbital.html">Orbital Missions</a></li>
+            <li><a href="kv-space.html">Space Tourism</a></li>
+            <li><a href="kv-education.html">Education Programs</a></li>
+          </ul>
+        </li>
+
+        <li><a href="kv-gallery.html">Gallery</a></li>
+        <li><a href="kv-blog.html">Space Blog</a></li>
+        <li><a href="kv-history.html">History</a></li>
+        <li><a href="kv-team.html">Team</a></li>
+        <li><a href="kv-faq.html">FAQ</a></li>
+        <li><a href="kv-contact.html">Contact Us</a></li>
+        <li><a href="kv-policies.html">Policies</a></li>
+      </ul>
+    </nav>
+  </header>
+
     <section class="kv-orbital-section">
-  <div class="kv-orbital-container">
+      <div class="kv-orbital-container">
+        <h2>Orbital Missions</h2>
+        <p class="kv-orbital-intro">
+          Join professional space missions orbiting Earth and experience life
+          beyond gravity.
+        </p>
 
-    <h2>Orbital Missions</h2>
-    <p class="kv-orbital-intro">
-      Join professional space missions orbiting Earth and experience life beyond gravity.
-    </p>
+        <div class="kv-orbital-card">
+          <div class="kv-orbital-icon">🛰️</div>
 
-    <div class="kv-orbital-card">
-      <div class="kv-orbital-icon">🛰️</div>
+          <p class="kv-orbital-desc">
+            Our orbital missions allow trained participants to live and work in
+            Earth orbit, experiencing real astronaut conditions aboard advanced
+            spacecraft.
+          </p>
 
-      <p class="kv-orbital-desc">
-        Our orbital missions allow trained participants to live and work in Earth orbit,
-        experiencing real astronaut conditions aboard advanced spacecraft.
-      </p>
+          <table class="kv-orbital-table">
+            <tr>
+              <th>Mission Detail</th>
+              <th>Information</th>
+            </tr>
+            <tr>
+              <td>Orbit Type</td>
+              <td>Low Earth Orbit (LEO)</td>
+            </tr>
+            <tr>
+              <td>Mission Duration</td>
+              <td>7 – 30 days</td>
+            </tr>
+            <tr>
+              <td>Training</td>
+              <td>Full astronaut preparation</td>
+            </tr>
+            <tr>
+              <td>Activities</td>
+              <td>Research, Earth observation, experiments</td>
+            </tr>
+          </table>
 
-      <table class="kv-orbital-table">
-        <tr>
-          <th>Mission Detail</th>
-          <th>Information</th>
-        </tr>
-        <tr>
-          <td>Orbit Type</td>
-          <td>Low Earth Orbit (LEO)</td>
-        </tr>
-        <tr>
-          <td>Mission Duration</td>
-          <td>7 – 30 days</td>
-        </tr>
-        <tr>
-          <td>Training</td>
-          <td>Full astronaut preparation</td>
-        </tr>
-        <tr>
-          <td>Activities</td>
-          <td>Research, Earth observation, experiments</td>
-        </tr>
-      </table>
-
-      <a href="#" class="kv-orbital-btn">Join a Mission</a>
-    </div>
-
-  </div>
-</section>
- <!-- Footer -->
+          <a href="#" class="kv-orbital-btn">Join a Mission</a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
     <footer class="kv-footer-section">
-        &copy; 2024 zeroGravity. All rights reserved.
+      &copy; 2024 zeroGravity. All rights reserved.
     </footer>
-  
-</body>
+    <script src="../js/dropdown.js"></script>
+  </body>
 </html>
-    
-    

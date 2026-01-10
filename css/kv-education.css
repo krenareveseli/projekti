@@ -5,6 +5,7 @@
   --dark: #1c0538;
   --light: #f4eef7;
   --accent: #aa50d4;
+  --darky:#190727;
 }
 *{
     box-sizing: border-box;
@@ -15,13 +16,11 @@
 html{
     scroll-behavior: smooth;
 }
-#kv-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding-top: 60px;
-    line-height: 1.7;
-    background-color: var(--dark);
-    color: var(--light);
+#kv{
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  background-color: var(--darky);
+  color: var(--light);
 }
 .main-header{
     display: block;
@@ -60,45 +59,120 @@ html{
     margin-left: 0px;
     border-radius:90px ;
 }
-/* NAV BAR */
-.kv-nav-bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 10 10px;
+/* ================= Navbar bazik ================= */
+.kv-nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.kv-nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background: rgba(68, 33, 68, 0.85);
   backdrop-filter: blur(10px);
   position: fixed;
-  top: 0%;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
+
 .kv-nav-bar li {
-  list-style: none;
+  position: relative;
 }
+
 .kv-nav-bar li a {
   color: white;
-  padding: 10px 10px;
+  padding: 14px 18px;
   text-decoration: none;
-  font-weight: 400;
-  transition:0.3s ease, transform 0.3s ease;
-  font-size:20px;
-  font-weight: bolder;
+  font-weight: 500;
+  transition: 0.3s ease, transform 0.3s ease;
 }
+
 .kv-nav-bar li a:hover {
   background-color: var(--accent);
+  border-radius: 20px;
+  transform: translateY(-2px);
+}
+
+/* ================= Dropdown ================= */
+.kv-dropdown-menu {
+  display: none;
+  position: sticky;
+  top: 100%;
+  left: 0;
+  background: rgba(68, 33, 68, 0.95);
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
   border-radius: 10px;
-  transform: translateY(-5px);
-  padding-bottom:10px;
-  padding-top:10px ;
+  z-index: 100;
+}
+
+.kv-dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.kv-dropdown:hover .kv-dropdown-menu {
+  display: block;
+}
+
+/* ================= Burger menu ================= */
+.kv-burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.kv-burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 900px) {
+  .kv-nav-bar {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(68,33,68,0.95);
+    transition: left 0.3s ease;
+  }
+
+  .kv-nav-bar.active {
+    left: 0;
+  }
+
+  .kv-burger {
+    display: flex;
+  }
+
+  /* Dropdown mobile */
+  .kv-dropdown-menu {
+    position: static;
+  }
+
+  .kv-dropdown-menu.show {
+    display: block;
+  }
 }
 .kv-education-section {
   padding: 90px 20px;
   background: linear-gradient(180deg, #070918, #10122d);
-  color: #fff;
+  color: #fff !important;
   text-align: center;
 }
 
@@ -109,21 +183,21 @@ html{
 
 .kv-education-section h2 {
   font-size: 36px;
-  color: #ffdd00;
+  color: #ffdd00 !important;
   margin-bottom: 15px;
 }
 
 .kv-education-intro {
   font-size: 17px;
-  color: #ccc;
+  color: #ccc !important;
   margin-bottom: 40px;
 }
 
 .kv-education-card {
-  background: rgba(26, 27, 43, 0.95);
+  background: rgba(26, 27, 43, 0.95) !important;
   padding: 40px;
   border-radius: 22px;
-  box-shadow: 0 20px 55px rgba(0,0,0,0.65);
+  box-shadow: 0 20px 55px rgba(0,0,0,0.65) !important;
 }
 
 .kv-education-icon {
@@ -132,7 +206,7 @@ html{
 }
 
 .kv-education-desc {
-  color: #ddd;
+  color: #ddd !important;
   line-height: 1.7;
   margin-bottom: 30px;
 }
@@ -147,25 +221,25 @@ html{
 .kv-education-table th,
 .kv-education-table td {
   padding: 12px;
-  border: 1px solid #3a3b55;
+  border: 1px solid #3a3b55 !important; 
 }
 
 .kv-education-table th {
-  background: #1a1b2b;
-  color: #ffdd00;
+  background: #1a1b2b !important;
+  color: #ffdd00 !important;
 }
 
 .kv-education-table td {
-  background: #24253b;
-  color: #ccc;
+  background: #24253b !important;
+  color: #ccc !important;
 }
 
 /* Button */
 .kv-education-btn {
   display: inline-block;
   padding: 14px 36px;
-  background: #ffdd00;
-  color: #0b0c1a;
+  background: #ffdd00 !important;
+  color: #0b0c1a !important;
   border-radius: 35px;
   text-decoration: none;
   font-weight: bold;
@@ -178,12 +252,15 @@ html{
 }
 .kv-weight-calculator {
   padding: 60px 20px;
-  background: #1a1b2b;
-  color: #fff;
+  background: #1a1b2b !important;
+  color: #fff !important;
   text-align: center;
   border-radius: 20px;
   max-width: 600px;
   margin: 50px auto;
+}
+.kv-card-education{
+  background-color: #070918;
 }
 
 .kv-weight-calculator input {
@@ -198,8 +275,8 @@ html{
 .kv-weight-calculator button {
   padding: 12px 20px;
   border: none;
-  background: #ffdd00;
-  color: #0b0c1a;
+  background: #ffdd00 !important;
+  color: #0b0c1a !important;
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
@@ -294,7 +371,7 @@ html{
 .kv-footer-section {
     text-align: center;
     padding: 20px 0;
-    background-color: #1d0837;
+    background-color: #1d0837 !important;
     color: #f4eef7;
     font-size: 14px;
 }

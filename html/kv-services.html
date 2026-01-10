@@ -9,25 +9,45 @@
 </head>
 <body id="kv">
   <header>
-    <nav class="container">
-            <div class="kv-logo">
-                <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
-                <p><i>Z</i>ero<i>G</i>ravity</p>
-            </div>
-        </nav>
-        <ul class="kv-nav-bar">
-            <li><a href="kv-index.html">Home</a></li>
-            <li><a href="kv-about.html">About Us</a></li>
-            <li><a href="kv-services.html">Services</a></li>
-            <li><a href="kv-gallery.html" >Gallery</a></li>
-            <li><a href="kv-blog.html" >Space Blog</a></li>
-            <li><a href="kv-history.html">History</a></li>
-            <li><a href="kv-team.html">Team</a></li>
-            <li><a href="kv-faq.html">FAQ</a></li>
-            <li><a href="kv-contact.html">Contact Us</a></li>
-            <li><a href="kv-policies.html" >Policies</a></li>
-        </ul>
-    </header>
+    <nav class="container kv-nav-container">
+      <div class="kv-logo">
+        <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
+        <p><i>Z</i>ero<i>G</i>ravity</p>
+      </div>
+
+      <!-- Burger menu për mobile -->
+      <div class="kv-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="kv-nav-bar">
+        <li><a href="kv-index.html">Home</a></li>
+        <li><a href="kv-about.html">About Us</a></li>
+
+        <!-- Dropdown Services -->
+        <li class="kv-dropdown">
+          <a href="kv-services.html">Services ▾</a>
+          <ul class="kv-dropdown-menu">
+            <li><a href="kv-suborbital.html">Suborbital Flights</a></li>
+            <li><a href="kv-orbital.html">Orbital Missions</a></li>
+            <li><a href="kv-space.html">Space Tourism</a></li>
+            <li><a href="kv-education.html">Education Programs</a></li>
+          </ul>
+        </li>
+
+        <li><a href="kv-gallery.html">Gallery</a></li>
+        <li><a href="kv-blog.html">Space Blog</a></li>
+        <li><a href="kv-history.html">History</a></li>
+        <li><a href="kv-team.html">Team</a></li>
+        <li><a href="kv-faq.html">FAQ</a></li>
+        <li><a href="kv-contact.html">Contact Us</a></li>
+        <li><a href="kv-policies.html">Policies</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
 </header>
     <section id="kv-services-sections">
@@ -65,6 +85,7 @@
     <footer class="kv-footer-section">
         &copy; 2024 zeroGravity. All rights reserved.
     </footer>
+    <script src="../js/dropdown.js"></script>
 </body>
 
 

@@ -1,44 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
   --dark: #1c0538;
   --light: #f4eef7;
   --accent: #aa50d4;
+  --darky:#190727;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-#kv-body{
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.7;
-    background-color: var(--dark);
-    color: var(--light);
+#kv{
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  background-color: var(--darky);
+  color: var(--light);
 }
-.main-header{
-    display: block;
-    color: white;
+.header {
+  display: block;
+  color: white;
+  margin-left: 0px;
+  margin-right:0px ;
 }
-.main{
-    display: block;
-    color: white;
-    padding: 20px 0;
+.main {
+  display: block;
+  color: white;
+  padding: 20px 0;
+}
+.container{
+  
+  margin-left: 0px;
+  margin-right:0px ;
 }
 .kv-logo{
     font-size: 50px;
     font-weight: bold;
-    background-color:var(--dark);
+    margin-left: 0px;
+    background-color:#190727;
     padding: 20px;
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
     text-align: center;
     color: white;
-    display: flex;
 
-    
 }
 .kv-logo i{
     color: rgb(99, 38, 99);
@@ -51,13 +59,20 @@
     margin-left: 0px;
     border-radius:90px ;
 }
+/* ================= Navbar bazik ================= */
+.kv-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .kv-nav-bar {
   list-style-type: none;
   margin: 0;
   padding: 0 30px;
-  display:flex ;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
   background: rgba(68, 33, 68, 0.85);
   backdrop-filter: blur(10px);
   position: fixed;
@@ -65,83 +80,144 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
+
 .kv-nav-bar li {
-  list-style: none;
+  position: relative;
 }
+
 .kv-nav-bar li a {
   color: white;
   padding: 14px 18px;
   text-decoration: none;
   font-weight: 500;
-  transition:0.3s ease, transform 0.3s ease;
+  transition: 0.3s ease, transform 0.3s ease;
 }
+
 .kv-nav-bar li a:hover {
   background-color: var(--accent);
   border-radius: 20px;
   transform: translateY(-2px);
 }
-a{
-  transition: all 0.3s ease;
+
+/* ================= Dropdown ================= */
+.kv-dropdown-menu {
+  display: none;
+  position:sticky;
+  top: 100%;
+  left: 0;
+  background: rgba(68, 33, 68, 0.95);
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+  border-radius: 10px;
+  z-index: 100;
 }
-#kv{
-    font-family: 'Roboto', sans-serif;
-    margin: 0%;
-    padding: 0%;
-    line-height: 1.4;
-    scroll-behavior: smooth;
+
+.kv-dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
 }
+
+.kv-dropdown:hover .kv-dropdown-menu {
+  display: block;
+}
+
+/* ================= Burger menu ================= */
+.kv-burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.kv-burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 900px) {
+  .kv-nav-bar {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(68,33,68,0.95);
+    transition: left 0.3s ease;
+  }
+
+  .kv-nav-bar.active {
+    left: 0;
+  }
+
+  .kv-burger {
+    display: flex;
+  }
+
+  /* Dropdown mobile */
+  .kv-dropdown-menu {
+    position: static;
+  }
+
+  .kv-dropdown-menu.show {
+    display: block;
+  }
+}
+
 /* Container About */
 .kv-about-section {
-    position: relative;
-    padding: 80px 50px;
-    background: linear-gradient(rgba(64, 44, 154, 0.4), rgba(0,0,0,0.4));
-    color: white;
-    text-align: center;
-    min-height: 100vh;
+  position: relative;
+  padding: 80px 50px;
+  background: linear-gradient(rgba(64, 44, 154, 0.4), rgba(0, 0, 0, 0.4));
+  color: white;
+  text-align: center;
+  min-height: 100vh;
 }
 
 /* H1 About */
 .kv-about-section h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 /* Paragraph */
 .kv-about-section p {
-    font-size: 18px;
-    line-height: 1.7;
-    max-width: 900px;
-    margin: 0 auto 40px auto;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
 }
 
 /* Gallery / Images */
 .kv-about-image {
-    margin-top: 40px;
-    width: 100%;
-   height: auto;
-   object-fit: cover;
-
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .kv-about-image img {
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .kv-about-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-   
 
 /* Footer */
 .kv-footer-section {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1d0837;
-    color: #f4eef7;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1d0837;
+  color: #f4eef7;
+  font-size: 14px;
 }
