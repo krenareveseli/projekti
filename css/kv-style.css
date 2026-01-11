@@ -209,13 +209,7 @@ html{
 .kv-hero-section i{
     color:var(--secondary)
 }
-.kv-hero-section p{
-    font-size: 30px;
-    margin-bottom: 30px;
-    color:  rgb(21, 5, 5);
-    background-color: rgb(249, 243, 243,0.1);
-    
-}
+
 .kv-hero-section a{
     color: rgb(215, 189, 215);
 }
@@ -226,13 +220,13 @@ html{
 /* ABOUT */
 .kv-about-section{
     padding: 50px 20px;
-    text-align: left;
+    text-align: center;
     background-color: #1e0d24;
 }
 .kv-about-section h2{
     font-size: 36px;
     margin-bottom: 10px;
-    align-items: left;
+    align-items: center;
     color: #ae96b2;
 }
 .kv-about-section p{
@@ -338,7 +332,19 @@ html{
 }
 .kv-space-blog-card{
     color:#ae96b2;
-    
+
+}
+.kv-blog-img-wrapper {
+  width: 100%;
+  height: 200px;              /* lartësia fikse */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.kv-blog-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* KY ËSHTË SEKRETI */
 }
 /* TEAM */
 .kv-team-section{
@@ -380,6 +386,18 @@ html{
 .kv-team-container img{
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.kv-team-img-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.kv-team-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* CONTACT */
 .kv-contact-cards {
@@ -430,29 +448,41 @@ html{
     margin-bottom: 20px;
 }
 .kv-faq-section a{
-    color: rgb(68, 33, 68);
+    color: rgb(68, 33, 68) !important;
     font-size: large;
 }
 .kv-faq-section a:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0) !important;
     text-decoration: underline;
 }
 .kv-faq-preview{
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.08) !important;
   border-radius: 18px;
   padding: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(247, 238, 238, 0.3) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .kv-faq-preview:hover{
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.45);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.45) !important;
 }
 
 a, button, img{
   transition: all 0.3s ease;
 }
+.kv-faq-section {
+  background-color: var(--darky);
+  padding: 20px;
+}
+.kv-faq-preview {
+  border-bottom: 1px var(--primary);
+  padding-bottom: 10px;
+}
+.kv-view-faq-button {
+  margin-top: 10px;
+}
+
 /* Slide from left */
 .kv-slide-left {
   animation: kvSlideLeft 1s ease-out;
@@ -487,51 +517,30 @@ a, button, img{
     text-align: center;
     padding: 20px 0;
 }
-/* Slide from left */
-.kv-slide-left {
-  animation: kvSlideLeft 1s ease-out;
-}  
-/* Tablet */
-@media (max-width: 1024px) {
-  .kv-services-container,
-  .kv-team-grid,
-  .kv-gallery-grid,
-  .kv-planet-cards,
-  .kv-contact-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
+.kv-footer-copy{
+    text-align: center;
+}
+/* BUTONAT */
+/* Ngjyra e brendshme për btn-primary */
+.btn-primary {
+  background-color: #ff6600; /* ngjyra që do */
+  border-color: #ff6600;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .kv-services-container,
-  .kv-team-grid,
-  .kv-gallery-grid,
-  .kv-planet-cards,
-  .kv-contact-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  #earthWeight,
-  #calculateWeight,
-  .kv-contact-form input,
-  .kv-contact-form textarea,
-  .kv-contact-form button {
-    width: 100%;
-  }
+/* Hover efekt */
+.btn-primary:hover {
+  background-color: #ff8533;
+  border-color: #ff8533;
 }
 
-/* Telefona shumë të vegjël */
-@media (max-width: 480px) {
-  h2 {
-    font-size: 28px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 14px;
-  }
+/* Ngjyra e btn-outline-primary */
+.btn-outline-primary {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
 }
