@@ -83,9 +83,7 @@ html{
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-.kv-nav-bar li {
-  position: relative;
-}
+
 
 .kv-nav-bar li a {
   color: white;
@@ -142,8 +140,8 @@ html{
 
 /* ================= Responsive ================= */
 @media (max-width: 900px) {
-  .kv-nav-bar {
-    position: absolute;
+  .kv-nav-bar{
+
     top: 70px;
     left: -100%;
     flex-direction: column;
@@ -151,6 +149,7 @@ html{
     background: rgba(68,33,68,0.95);
     transition: left 0.3s ease;
   }
+
 
   .kv-nav-bar.active {
     left: 0;
@@ -174,15 +173,13 @@ html{
 
 /* Background me galaktikë */
 #kv-services-sections {
-   padding: 80px 20px;
    background: url no-repeat center center/cover;
    color: #fff;
-   position: relative;
-    padding: 80px 50px;
-    background: linear-gradient(rgba(64, 44, 154, 0.4), rgba(0,0,0,0.4));
     color: white;
     text-align: center;
     min-height: 100vh;
+    margin-left:80px ;
+   
 }
 
 #kv-services-sectionss::before {
@@ -235,8 +232,7 @@ html{
 }
 
 .card-kv{
-  background-color: var(--primary);
-  border: #632679;
+background-color: var(--secondary);
 }
 /* Footer */
 .kv-footer-section {

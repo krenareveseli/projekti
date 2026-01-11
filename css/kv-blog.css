@@ -170,7 +170,7 @@ html{
   }
 }
 .kv-blog-section {
-  padding: 100px 20px;
+  margin-left:80px ;
   background: linear-gradient(180deg, #070918, #0b0c1a);
   color: #fff;
   text-align: center;

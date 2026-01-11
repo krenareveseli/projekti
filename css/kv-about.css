@@ -39,6 +39,7 @@
     font-size: 50px;
     font-weight: bold;
     margin-left: 0px;
+    margin-right:0px ;
     background-color:#190727;
     padding: 20px;
     text-align: left;
@@ -172,9 +173,10 @@
 
 /* Container About */
 .kv-about-section {
-  position: relative;
-  padding: 80px 50px;
-  background: linear-gradient(rgba(64, 44, 154, 0.4), rgba(0, 0, 0, 0.4));
+  align-items: center;
+  background-color: rgba linear-gradient(68, 33, 68, 0.85);
+
+ margin-left:80px ;
   color: white;
   text-align: center;
   min-height: 100vh;
