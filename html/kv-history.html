@@ -6,6 +6,8 @@
     <title>History | zeroGravity</title>
         <link rel="stylesheet" href="../css/kv-history.css">
    <link rel="icon" href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
 <body id="kv">
@@ -49,65 +51,99 @@
     </nav>
   </header>
 
-<section class="kv-history-section">
-  <div class="kv-history-container">
+<section class="kv-history-section py-5">
+  <div class="container kv-history-container">
 
-    <h2>Our History</h2>
-    <p class="kv-history-intro">
+    <h2 class="mb-4 text-center">Our History</h2>
+    <p class="kv-history-intro mb-5 text-center">
       A journey through our milestones, missions, and breakthroughs in space exploration.
     </p>
 
-    <div class="kv-history-timeline">
+    <div class="kv-history-timeline position-relative">
 
-      <div class="kv-history-item">
-        <div class="kv-history-year">2018</div>
-        <div class="kv-history-content">
-          <h3>Foundation of ZeroGravity</h3>
-          <p>
-            ZeroGravity was founded with a bold vision to make space accessible
-            through innovation and exploration.
-          </p>
-          <img src="../images/3d-rendering-futuristic-technologies.jpg" alt="History Image">
+      <!-- Timeline vertical line -->
+      <div class="kv-timeline-line position-absolute top-0 start-50 translate-middle-x"></div>
+
+      <!-- 2018 -->
+      <div class="kv-history-item-left row mb-5">
+        <div class="col-md-5 text-end">
+          <div class="kv-history-year bg-primary text-white d-inline-block px-3 py-1 rounded">
+            2018
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="kv-history-content card p-3">
+            <h3>Foundation of ZeroGravity</h3>
+            <p>
+              ZeroGravity was founded with a bold vision to make space accessible
+              through innovation and exploration.
+            </p>
+            <img src="../images/3d-rendering-futuristic-technologies.jpg" alt="History Image" class="img-fluid rounded">
+          </div>
         </div>
       </div>
 
-      <div class="kv-history-item">
-        <div class="kv-history-year">2020</div>
-        <div class="kv-history-content">
-          <h3>First Suborbital Flight</h3>
-          <p>
-            Successfully completed our first suborbital mission,
-            marking a major milestone in space travel.
-          </p>
-          <img src="../images/earth-seen-from-space.jpg" alt="History Image">
+      <!-- 2020 -->
+      <div class="kv-history-item-right row mb-5">
+        <div class="col-md-5">
+          <div class="kv-history-content card p-3">
+            <h3>First Suborbital Flight</h3>
+            <p>
+              Successfully completed our first suborbital mission,
+              marking a major milestone in space travel.
+            </p>
+            <img src="../images/earth-seen-from-space.jpg" alt="History Image" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 text-start">
+          <div class="kv-history-year bg-primary text-white d-inline-block px-3 py-1 rounded">
+            2020
+          </div>
         </div>
       </div>
 
-      <div class="kv-history-item">
-        <div class="kv-history-year">2022</div>
-        <div class="kv-history-content">
-          <h3>Orbital Missions Program</h3>
-          <p>
-            Launched professional orbital missions with international
-            research partners.
-          </p>
-          <img src="../images/aesthetic-planet-ocean-background-galaxy-nature-remix.jpg" alt="History Image">
+      <!-- 2022 -->
+      <div class="kv-history-item-left row mb-5">
+        <div class="col-md-5 text-end">
+          <div class="kv-history-year bg-primary text-white d-inline-block px-3 py-1 rounded">
+            2022
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+          <div class="kv-history-content card p-3">
+            <h3>Orbital Missions Program</h3>
+            <p>
+              Launched professional orbital missions with international
+              research partners.
+            </p>
+            <img src="../images/aesthetic-planet-ocean-background-galaxy-nature-remix.jpg" alt="History Image" class="img-fluid rounded">
+          </div>
         </div>
       </div>
 
-      <div class="kv-history-item">
-        <div class="kv-history-year">2025</div>
-        <div class="kv-history-content">
-          <h3>Global Space Tourism</h3>
-          <p>
-            Opened space tourism experiences for explorers worldwide.
-          </p>
-          <img src="../images/earth-spacecraft-elements-this-image-furnished-by-nasa.jpg" alt="History Image">
+      <!-- 2025 -->
+      <div class="kv-history-item-right row mb-5">
+        <div class="col-md-5">
+          <div class="kv-history-content card p-3">
+            <h3>Global Space Tourism</h3>
+            <p>
+              Opened space tourism experiences for explorers worldwide.
+            </p>
+            <img src="../images/earth-spacecraft-elements-this-image-furnished-by-nasa.jpg" alt="History Image" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5 text-start">
+          <div class="kv-history-year bg-primary text-white d-inline-block px-3 py-1 rounded">
+            2025
+          </div>
         </div>
       </div>
 
     </div>
-
   </div>
 </section>
  <!-- Footer -->

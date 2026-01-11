@@ -52,62 +52,73 @@
     </nav>
   </header>
 
-  <section class="kv-education-section">
-  <div class="kv-education-container">
+  <section class="kv-education-section py-5">
+  <div class="container kv-education-container">
 
-    <h2>Education Programs</h2>
-    <p class="kv-education-intro">
+    <h2 class="mb-4">Education Programs</h2>
+    <p class="kv-education-intro mb-4">
       Learn astronomy, space science, and future technologies with guidance from industry experts.
     </p>
 
-    <div class="kv-education-card">
-      <div class="kv-education-icon">📚</div>
+    <div class="kv-education-card card p-4 mb-4">
+      <div class="kv-education-icon display-4 mb-3 text-center">📚</div>
 
-      <p class="kv-education-desc">
+      <p class="kv-education-desc mb-3">
         Our education programs are designed for students, professionals, and space enthusiasts.
         Gain hands-on experience, attend expert-led workshops, and explore the science behind
         space missions and exploration.
       </p>
 
-      <table class="kv-education-table">
-        <tr>
-          <th>Program</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td>Astronomy Basics</td>
-          <td>Understanding stars, planets, and galaxies</td>
-        </tr>
-        <tr>
-          <td>Space Science</td>
-          <td>Physics, orbits, and space environments</td>
-        </tr>
-        <tr>
-          <td>Mission Training</td>
-          <td>Simulation-based astronaut preparation</td>
-        </tr>
-        <tr>
-          <td>Workshops</td>
-          <td>Hands-on experiments and expert sessions</td>
-        </tr>
-      </table>
+      <div class="table-responsive mb-3">
+        <table class="table table-bordered kv-education-table">
+          <thead class="table-light">
+            <tr>
+              <th>Program</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Astronomy Basics</td>
+              <td>Understanding stars, planets, and galaxies</td>
+            </tr>
+            <tr>
+              <td>Space Science</td>
+              <td>Physics, orbits, and space environments</td>
+            </tr>
+            <tr>
+              <td>Mission Training</td>
+              <td>Simulation-based astronaut preparation</td>
+            </tr>
+            <tr>
+              <td>Workshops</td>
+              <td>Hands-on experiments and expert sessions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <a href="#" class="kv-education-btn">Enroll Now</a>
+      <a href="#" class="btn btn-primary kv-education-btn">Enroll Now</a>
     </div>
 
   </div>
 </section>
-<section class="kv-planet-weight-section">
-  <div class="kv-planet-weight-container">
-    <h2>Planet Weight Calculator</h2>
-    <p>Enter your weight on Earth and see how much you would weigh on other planets.</p>
 
-    <input type="number" id="earthWeight" placeholder="Your weight (kg)">
-    <button id="calculateWeight">Calculate</button>
+<section class="kv-planet-weight-section py-5">
+  <div class="container kv-planet-weight-container">
 
-    <div id="planetResults" class="kv-planet-cards">
+    <h2 class="mb-4">Planet Weight Calculator</h2>
+    <p class="mb-3">Enter your weight on Earth and see how much you would weigh on other planets.</p>
+
+    <div class="input-group mb-3">
+      <input type="number" id="earthWeight" class="form-control" placeholder="Your weight (kg)">
+      <button id="calculateWeight" class="btn btn-primary">Calculate</button>
+    </div>
+
+    <div id="planetResults" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 kv-planet-cards">
       <!-- JS do shtojë planet cards këtu -->
     </div>
+
   </div>
 </section>
  <!-- Footer -->

@@ -192,6 +192,40 @@ html{
   margin-bottom: 50px;
   font-size: 17px;
 }
+.kv-gallery-box {
+  width: 100%;
+  height: 250px; /* të gjitha fotot brenda një box uniform */
+  overflow: hidden;
+  border-radius: 8px; /* opsionale, bukuri */
+}
+
+.kv-gallery-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* foto mbulon box-in pa deformim */
+  transition: transform 0.3s ease;
+}
+
+.kv-gallery-box:hover img {
+  transform: scale(1.05); /* efekt zoom i lehtë kur hover */
+}
+
+.kv-gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* overlay me transparencë */
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px; /* të njejtën si box */
+}
+
+.kv-gallery-box:hover .kv-gallery-overlay {
+  opacity: 1;
+}
 
 /* GRID */
 .kv-gallery-grid {

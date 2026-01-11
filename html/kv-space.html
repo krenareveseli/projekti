@@ -10,6 +10,8 @@
       href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png"
       type="image/x-icon"
     />
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </head>
  <body id="kv">
   <header>
@@ -52,28 +54,35 @@
     </nav>
   </header>
 
-    <section class="kv-tourism-section">
-      <div class="kv-tourism-container">
-        <h2>Space Tourism</h2>
-        <p class="kv-tourism-intro">
-          Luxury space travel designed for explorers seeking the ultimate
-          adventure beyond Earth.
+  <section class="kv-tourism-section py-5">
+  <div class="container kv-tourism-container">
+
+    <h2 class="mb-4 text-center">Space Tourism</h2>
+    <p class="kv-tourism-intro mb-4 text-center">
+      Luxury space travel designed for explorers seeking the ultimate
+      adventure beyond Earth.
+    </p>
+
+    <div class="card kv-tourism-card p-4 shadow-sm">
+
+      <div class="d-flex align-items-center mb-3">
+        <div class="kv-tourism-icon fs-1 me-3">🌌</div>
+        <p class="kv-tourism-desc mb-0">
+          Space Tourism offers a once-in-a-lifetime journey combining comfort,
+          safety, and breathtaking views of Earth from space. Experience zero
+          gravity in premium spacecraft designed for exploration and luxury.
         </p>
+      </div>
 
-        <div class="kv-tourism-card">
-          <div class="kv-tourism-icon">🌌</div>
-
-          <p class="kv-tourism-desc">
-            Space Tourism offers a once-in-a-lifetime journey combining comfort,
-            safety, and breathtaking views of Earth from space. Experience zero
-            gravity in premium spacecraft designed for exploration and luxury.
-          </p>
-
-          <table class="kv-tourism-table">
+      <div class="table-responsive mb-3">
+        <table class="table table-bordered kv-tourism-table">
+          <thead class="table-light">
             <tr>
               <th>Experience</th>
               <th>Details</th>
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>Flight Type</td>
               <td>Luxury Suborbital & Orbital</td>
@@ -90,12 +99,16 @@
               <td>Included</td>
               <td>Training, meals, safety support</td>
             </tr>
-          </table>
-
-          <a href="#" class="kv-tourism-btn">Start Your Journey</a>
-        </div>
+          </tbody>
+        </table>
       </div>
-    </section>
+
+      <a href="#" class="btn btn-primary kv-tourism-btn">Start Your Journey</a>
+
+    </div>
+
+  </div>
+</section>
     <!-- Footer -->
     <footer class="kv-footer-section">
       &copy; 2026 zeroGravity. All rights reserved.

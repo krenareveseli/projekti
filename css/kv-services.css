@@ -212,13 +212,6 @@ html{
   margin-bottom: 40px;
 }
 
-.service-card {
-  background: rgba(26, 27, 43, 0.85);
-  padding: 30px 20px;
-  border-radius: 15px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
 .service-card .icon {
   font-size: 50px;
   margin-bottom: 20px;
@@ -233,7 +226,7 @@ html{
 .service-card p {
   font-size: 16px;
   line-height: 1.5;
-  color: #ccc;
+  color: #160a0a;
 }
 
 .service-card:hover {
@@ -241,22 +234,9 @@ html{
   box-shadow: 0 15px 35px rgba(0,0,0,0.6);
 }
 
-.view-all-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #ffdd00;
-  color: #0b0c1a;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.view-all-btn:hover {
-  background: #e6c200;
-}
-.service-card a{
-    color:#e6c200
+.card-kv{
+  background-color: var(--primary);
+  border: #632679;
 }
 /* Footer */
 .kv-footer-section {

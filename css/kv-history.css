@@ -195,11 +195,38 @@ html{
 
 /* TIMELINE */
 .kv-history-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
   position: relative;
+  padding: 2rem 0;
 }
+
+.kv-timeline-line {
+  width: 4px;
+  height: 100%;
+  background: #0d6efd; /* Bootstrap primary color */
+  left: 50%;
+}
+
+.kv-history-item-left .kv-history-content {
+  margin-left: auto;
+}
+
+.kv-history-item-right .kv-history-content {
+  margin-right: auto;
+}
+
+/* Optional responsive adjustments */
+@media (max-width: 767px) {
+  .kv-history-item-left,
+  .kv-history-item-right {
+    flex-direction: column !important;
+  }
+  .kv-history-item-left .kv-history-year,
+  .kv-history-item-right .kv-history-year {
+    text-align: center !important;
+    margin-bottom: 1rem;
+  }
+}
+
 
 .kv-history-timeline::before {
   content: "";

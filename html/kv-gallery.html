@@ -6,6 +6,8 @@
     <title>Gallery|zeroGravity</title>
     <link rel="stylesheet" href="../css/kv-gallery.css">
    <link rel="icon" href="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body id="kv">
   <header>
@@ -48,93 +50,137 @@
     </nav>
   </header>
 
-    <section class="kv-gallery-section">
-  <div class="kv-gallery-container">
+  <section class="kv-gallery-section py-5">
+  <div class="container kv-gallery-container">
 
-    <h2>Space Gallery</h2>
-    <p class="kv-gallery-intro">
+    <h2 class="mb-4">Space Gallery</h2>
+    <p class="kv-gallery-intro mb-4">
       Explore breathtaking moments from space missions, galaxies, and beyond.
     </p>
 
-    <div class="kv-gallery-grid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 kv-gallery-grid">
 
-      <div class="kv-gallery-item">
-        <img src="../images/background-with-astral-planets-universe.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Deep Space</h3>
-        </div>
-      </div>
-
-      <div class="kv-gallery-item">
-        <img src="../images/3d-rendering-dark-earth-space.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Earth From Orbit</h3>
+      <!-- Gallery Item 1 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/background-with-astral-planets-universe.jpg" alt="Deep Space" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Deep Space</h3>
+          </div>
         </div>
       </div>
 
-      <div class="kv-gallery-item">
-        <img src="../images/nasa.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Astronaut Mission</h3>
+      <!-- Gallery Item 2 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/3d-rendering-dark-earth-space.jpg" alt="Earth From Orbit" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Earth From Orbit</h3>
+          </div>
         </div>
       </div>
 
-      <div class="kv-gallery-item">
-        <img src="../images/milky-way-illuminates-star-trail-mountain-peak-generated-by-ai.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Galaxy View</h3>
+      <!-- Gallery Item 3 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/nasa.jpg" alt="Astronaut Mission" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Astronaut Mission</h3>
+          </div>
         </div>
       </div>
 
-      <div class="kv-gallery-item">
-        <img src="../images/space-scene-with-asteroid.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Rocket Launch</h3>
+      <!-- Gallery Item 4 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/milky-way-illuminates-star-trail-mountain-peak-generated-by-ai.jpg" alt="Galaxy View" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Galaxy View</h3>
+          </div>
         </div>
       </div>
 
-      <div class="kv-gallery-item">
-        <img src="../images/photorealistic-earth-planet.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Moon Surface</h3>
+      <!-- Gallery Item 5 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/space-scene-with-asteroid.jpg" alt="Rocket Launch" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Rocket Launch</h3>
+          </div>
         </div>
       </div>
-      <div class="kv-gallery-item">
-        <img src="../images/pexels-felix-mittermeier-956999.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Stars</h3>
+
+      <!-- Gallery Item 6 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/photorealistic-earth-planet.jpg" alt="Moon Surface" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Moon Surface</h3>
+          </div>
         </div>
       </div>
-      <div class="kv-gallery-item">
-        <img src="../images/comets.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Comets</h3>
+
+      <!-- Gallery Item 7 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/pexels-felix-mittermeier-956999.jpg" alt="Stars" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Stars</h3>
+          </div>
         </div>
       </div>
-      <div class="kv-gallery-item">
-        <img src="../images/black-hole.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>BlockHole</h3>
+
+      <!-- Gallery Item 8 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/comets.jpg" alt="Comets" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Comets</h3>
+          </div>
         </div>
       </div>
-      <div class="kv-gallery-item">
-        <img src="../images/hapsira.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Deep Somewhere In Space</h3>
+
+      <!-- Gallery Item 9 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/black-hole.jpg" alt="Black Hole" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Black Hole</h3>
+          </div>
         </div>
       </div>
-      <div class="kv-gallery-item">
-        <img src="../images/marss.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>RedGround</h3>
+
+      <!-- Gallery Item 10 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/hapsira.jpg" alt="Deep Somewhere In Space" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Deep Somewhere In Space</h3>
+          </div>
         </div>
       </div>
-      <div class="kv-gallery-item">
-        <img src="../images/planets.jpg" alt="Space Image">
-        <div class="kv-gallery-overlay">
-          <h3>Planets</h3>
+
+      <!-- Gallery Item 11 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/marss.jpg" alt="RedGround" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">RedGround</h3>
+          </div>
         </div>
       </div>
+
+      <!-- Gallery Item 12 -->
+      <div class="col kv-gallery-item">
+        <div class="kv-gallery-box position-relative">
+          <img src="../images/planets.jpg" alt="Planets" class="img-fluid">
+          <div class="kv-gallery-overlay d-flex align-items-center justify-content-center">
+            <h3 class="text-white">Planets</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
  <!-- Footer -->

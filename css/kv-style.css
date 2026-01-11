@@ -35,18 +35,21 @@ html{
   color: var(--light);
 }
 /* MAIN AND HEADER */
-.main-header{
-    display: block;
-    color: white;
-    padding: 60px 0;
-
+.header {
+  display: block;
+  color: white;
+  margin-left: 0px;
+  margin-right:0px ;
 }
-.main{
-    display: block;
-    color: white;
-    padding: 20px 0;
-
-
+.main {
+  display: block;
+  color: white;
+  padding: 20px 0;
+}
+.container{
+  
+  margin-left: 0px;
+  margin-right:0px ;
 }
 .kv-logo{
     font-size: 50px;
@@ -117,7 +120,7 @@ html{
 /* ================= Dropdown ================= */
 .kv-dropdown-menu {
   display: none;
-  position: sticky;
+  position:sticky;
   top: 100%;
   left: 0;
   background: rgba(68, 33, 68, 0.95);
@@ -182,6 +185,7 @@ html{
     display: block;
   }
 }
+
 /* HERO */
 .kv-hero-section{
     position: relative;
@@ -519,28 +523,4 @@ a, button, img{
 }
 .kv-footer-copy{
     text-align: center;
-}
-/* BUTONAT */
-/* Ngjyra e brendshme për btn-primary */
-.btn-primary {
-  background-color: #ff6600; /* ngjyra që do */
-  border-color: #ff6600;
-}
-
-/* Hover efekt */
-.btn-primary:hover {
-  background-color: #ff8533;
-  border-color: #ff8533;
-}
-
-/* Ngjyra e btn-outline-primary */
-.btn-outline-primary {
-  color: #ff6600;
-  border-color: #ff6600;
-}
-
-.btn-outline-primary:hover {
-  color: #ffffff;
-  background-color: #ff6600;
-  border-color: #ff6600;
 }
