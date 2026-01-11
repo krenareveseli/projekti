@@ -271,13 +271,13 @@ html{
 /* SERVICES */
 .kv-services-section{
     padding: 50px 20px;
-    background-color: #0e0212;
+    background-color: #190a1f;
     text-align: center;
     color:white ;
     padding: 80px 20px;
     display: block;
 }
-.kv-services-section h2{
+.kv-services-section h3{
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -285,27 +285,27 @@ html{
     font-size: 18px;
     margin-bottom: 20px;
 }
-.kv-services-container h3{
-    text-decoration: underline;
-}
+
 .kv-services-section a{
     color: rgb(232, 226, 232);
     font-size: large;
 }
 .kv-services-section a:hover{
     color: rgb(200, 193, 210);
-    text-decoration: underline;
 }
 .kv-services-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
-.kv-services-container 
-.icon{
-     font-size: 50px;
-  margin-bottom: 20px;
+.card-body{
+    background-color: rgba(29, 14, 31, 0.85);
+    align-items: center;
 }
+.card-body h3,p{
+    color: var(--light);
+}
+
 /* SPACE */
 .kv-space-section{
     padding: 50px 20px;
@@ -320,23 +320,25 @@ html{
 .kv-space-section p{
     font-size: 18px;
     margin-bottom: 20px;
-    color:white
+    color:white;
 }
 .kv-space-section a{
-    color: rgb(189, 177, 189);
+    color: rgb(189, 177, 189) !important;
 
     font-size: large;
 }
 .kv-space-section a:hover{
-    color: rgb(182, 155, 215);
-    text-decoration: underline;
+    color: rgb(182, 155, 215) !important;
+    text-decoration: underline !important;
 }
 .kv-space-section img{
     border:4px solid #53336c ;
+    object-fit: cover;
 
 }
 .kv-space-blog-card{
-    color:#ae96b2
+    color:#ae96b2;
+    
 }
 /* TEAM */
 .kv-team-section{
