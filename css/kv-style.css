@@ -34,7 +34,6 @@ html{
   background-color: var(--darky);
   color: var(--light);
 }
-/* MAIN AND HEADER */
 .header {
   display: block;
   color: white;
@@ -55,7 +54,7 @@ html{
     font-size: 50px;
     font-weight: bold;
     margin-left: 0px;
-    margin-right:0px; 
+    margin-right:0px ;
     background-color:#190727;
     padding: 20px;
     text-align: left;
@@ -294,7 +293,6 @@ html{
 }
 .kv-services-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 .card-body{

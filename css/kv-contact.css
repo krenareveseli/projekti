@@ -195,9 +195,8 @@ html{
 
 /* GRID */
 .kv-contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  display: flex;
+
 }
 
 /* INFO */
@@ -265,12 +264,6 @@ html{
   transform: translateY(-4px);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .kv-contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
 /* Footer */
 .kv-footer-section {
     text-align: center;

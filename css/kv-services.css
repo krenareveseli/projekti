@@ -32,8 +32,7 @@ html{
 #kv{
   font-family: "Roboto", sans-serif;
   line-height: 1.7;
-  background-color: var(--darky);
-  color: var(--light);
+  background-color:var(--darky) ;
 }
 .kv-logo{
     font-size: 50px;
@@ -172,25 +171,22 @@ html{
 
 
 /* Background me galaktikë */
-#kv-services-sections {
-   background: url no-repeat center center/cover;
-   color: #fff;
-    color: white;
-    text-align: center;
-    min-height: 100vh;
-    margin-left:80px ;
-   
+#kv-services-sections {   /* korrigjo id */
+  position: relative;
+  min-height: 100vh;
+  
 }
 
-#kv-services-sectionss::before {
+#kv-services-sections::before {
   content: '';
   position: absolute;
-  top:0; left:0;
-  width:100%; height:100%;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.6);
   z-index: 0;
 }
-
 .container {
   position: relative;
   z-index: 1;
@@ -199,14 +195,27 @@ html{
 .section-title {
   font-size: 36px;
   margin-bottom: 50px;
-  color: #ffdd00;
+  color: #ffdd00 !important;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
+
+#kv-services-sections .container {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.service-card, .card-kv {
+  
+  transition: all 0.4s ease;
+  border-radius: 20px;
+  background-color: var(--darky);
+  border: none;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+.service-card:hover, .card-kv:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(64, 52, 168, 0.6);
 }
 
 .service-card .icon {
@@ -217,23 +226,21 @@ html{
 .service-card h3 {
   margin-bottom: 15px;
   font-size: 22px;
-  color: #ffdd00;
+  color: #ffdd00 !important;
 }
 
 .service-card p {
   font-size: 16px;
   line-height: 1.5;
-  color: #160a0a;
+  color: #af9595 !important;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+.service-card:hover, .card-kv:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(64,52,168,0.5);
+  background-color: rgba(40,40,60,0.95);
 }
 
-.card-kv{
-background-color: var(--secondary);
-}
 /* Footer */
 .kv-footer-section {
     text-align: center;

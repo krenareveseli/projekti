@@ -334,7 +334,6 @@ html{
 /* Planet Cards Grid */
 .kv-planet-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }

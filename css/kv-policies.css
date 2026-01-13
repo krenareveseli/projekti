@@ -178,8 +178,8 @@ html{
 }
 .kv-policies-section {
   padding: 100px 20px;
-  background: radial-gradient(circle at top, #050714, #0b0c1a);
-  color: #fff;
+  background: radial-gradient(circle at top, #050714, #0b0c1a) !important;
+  color: #fff !important;
   text-align: center;
 }
 
@@ -190,45 +190,43 @@ html{
 
 .kv-policies-section h2 {
   font-size: 40px;
-  color: #ffdd00;
+  color: #ffdd00 !important;
   margin-bottom: 10px;
 }
 
 .kv-policies-intro {
-  color: #ccc;
+  color: #ccc !important;
   margin-bottom: 50px;
   font-size: 17px;
 }
 
 /* GRID */
 .kv-policies-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
   gap: 40px;
 }
 
 /* CARD */
 .kv-policy-card {
-  background: rgba(26, 27, 43, 0.95);
+  background: rgba(26, 27, 43, 0.95) !important;
   padding: 30px 25px;
   border-radius: 22px;
-  box-shadow: 0 25px 55px rgba(0,0,0,0.65);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.65) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .kv-policy-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 30px 65px rgba(0,0,0,0.8);
+  box-shadow: 0 30px 65px rgba(0,0,0,0.8) !important;
 }
 
 .kv-policy-card h3 {
-  color: #ffdd00;
+  color: #ffdd00 !important;
   margin-bottom: 12px;
   font-size: 20px;
 }
 
 .kv-policy-card p {
-  color: #ddd;
+  color: #ddd !important;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -237,8 +235,8 @@ html{
 .kv-policy-btn {
   display: inline-block;
   padding: 12px 30px;
-  background: #ffdd00;
-  color: #0b0c1a;
+  background: #ffdd00 !important;
+  color: #0b0c1a !important;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -246,16 +244,11 @@ html{
 }
 
 .kv-policy-btn:hover {
-  background: #e6c200;
+  background: #e6c200 !important;
   transform: translateY(-4px);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .kv-policies-section h2 {
-    font-size: 32px;
-  }
-}
+
 /* Footer */
 .kv-footer-section {
     text-align: center;
