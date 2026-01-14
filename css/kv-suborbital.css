@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
@@ -15,26 +15,18 @@
 }
 html{
     scroll-behavior: smooth;
-}
-.main-header{
-    display: block;
-    color: white;
-    padding: 60px 0;
-
-}
-.main{
-    display: block;
-    color: white;
-    padding: 20px 0;
+    overflow-x:hidden;
 }
 #kv{
-  font-family: "Roboto", sans-serif;
+font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
+  overflow-x: hidden;
 }
+
 .kv-logo{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 0px;
     background-color:#190727;
@@ -44,6 +36,7 @@ html{
     display: flex;
     text-align: center;
     color: white;
+    padding-top:70px ;
 
 }
 .kv-logo i{
@@ -212,6 +205,7 @@ html{
 #suborbital-flights .flight-details td {
   border: 1px solid #444;
   padding: 10px;
+  color: whitesmoke;
 }
 
 #suborbital-flights .flight-details th {

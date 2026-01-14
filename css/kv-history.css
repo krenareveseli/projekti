@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
@@ -15,28 +15,18 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 #kv{
-  font-family: "Roboto", sans-serif;
+font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
+  overflow-x: hidden;
 }
-.main-header{
-    display: block;
-    color: white;
-    padding: 60px 0;
 
-}
-.main{
-    display: block;
-    color: white;
-    padding: 20px 0;
-
-
-}
 .kv-logo{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 0px;
     background-color:#190727;
@@ -46,6 +36,7 @@ html{
     display: flex;
     text-align: center;
     color: white;
+    padding-top:70px ;
 
 }
 .kv-logo i{
@@ -169,6 +160,9 @@ html{
     display: block;
   }
 }
+/* ------------------------- */
+/* KV HISTORY SECTION        */
+/* ------------------------- */
 .kv-history-section {
   padding: 120px 20px;
   background: radial-gradient(circle at top, #050714, #0b0c1a);
@@ -193,41 +187,15 @@ html{
   font-size: 17px;
 }
 
-/* TIMELINE */
+/* ------------------------- */
+/* TIMELINE                  */
+/* ------------------------- */
 .kv-history-timeline {
   position: relative;
   padding: 2rem 0;
 }
 
-.kv-timeline-line {
-  width: 4px;
-  height: 100%;
-  background: #0d6efd; /* Bootstrap primary color */
-  left: 50%;
-}
-
-.kv-history-item-left .kv-history-content {
-  margin-left: auto;
-}
-
-.kv-history-item-right .kv-history-content {
-  margin-right: auto;
-}
-
-/* Optional responsive adjustments */
-@media (max-width: 767px) {
-  .kv-history-item-left,
-  .kv-history-item-right {
-    flex-direction: column !important;
-  }
-  .kv-history-item-left .kv-history-year,
-  .kv-history-item-right .kv-history-year {
-    text-align: center !important;
-    margin-bottom: 1rem;
-  }
-}
-
-
+/* vertical line in middle */
 .kv-history-timeline::before {
   content: "";
   position: absolute;
@@ -237,78 +205,75 @@ html{
   height: 100%;
   background: linear-gradient(to bottom, #ffdd00, transparent);
   transform: translateX(-50%);
+  z-index: 1;
 }
 
-/* ITEM */
+/* ------------------------- */
+/* ITEM                      */
+/* ------------------------- */
 .kv-history-item {
-  display: flex;
-  justify-content: flex-start;
   position: relative;
+  margin-bottom: 5rem;
 }
 
-.kv-history-item:nth-child(even) {
-  justify-content: flex-end;
-}
-
-/* YEAR */
-.kv-history-year {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #ffdd00;
-  color: #0b0c1a;
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-weight: bold;
-  z-index: 2;
-}
-
-/* CONTENT */
+/* content box */
 .kv-history-content {
-  width: 45%;
   background: rgba(26, 27, 43, 0.95);
   padding: 30px;
   border-radius: 22px;
   box-shadow: 0 25px 60px rgba(0,0,0,0.7);
   text-align: left;
+
+  /* width auto, lejo Bootstrap të menaxhojë */
+  width: 100%;
 }
 
+/* title inside content */
 .kv-history-content h3 {
   color: #ffdd00;
   margin-bottom: 10px;
 }
 
+/* paragraph inside content */
 .kv-history-content p {
   color: #ddd;
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
+/* images responsive */
 .kv-history-content img {
   width: 100%;
   border-radius: 15px;
   margin-top: 15px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
+/* year bubble */
+.kv-history-year {
+  background: #ffdd00;
+  color: #0b0c1a;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  /* lejo Bootstrap të pozicionojë */
+  position: static;
+  transform: none;
+  z-index: 2;
+}
+
+/* ------------------------- */
+/* RESPONSIVE MOBILE          */
+/* ------------------------- */
+@media (max-width: 991px) {
   .kv-history-timeline::before {
     left: 20px;
   }
 
-  .kv-history-item,
-  .kv-history-item:nth-child(even) {
-    justify-content: flex-start;
-  }
-
-  .kv-history-year {
-    left: 20px;
-    transform: none;
-  }
-
-  .kv-history-content {
-    width: 100%;
-    margin-left: 60px;
+  .kv-history-item {
+    margin-bottom: 3rem;
   }
 }
 /* Footer */

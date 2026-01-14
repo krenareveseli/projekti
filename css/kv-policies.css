@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
@@ -15,28 +15,18 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 #kv{
-  font-family: "Roboto", sans-serif;
+font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
+  overflow-x: hidden;
 }
-.main-header{
-    display: block;
-    color: white;
-    padding: 60px 0;
 
-}
-.main{
-    display: block;
-    color: white;
-    padding: 20px 0;
-
-
-}
 .kv-logo{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 0px;
     background-color:#190727;
@@ -46,6 +36,7 @@ html{
     display: flex;
     text-align: center;
     color: white;
+    padding-top:70px ;
 
 }
 .kv-logo i{
@@ -200,10 +191,9 @@ html{
   font-size: 17px;
 }
 
-/* GRID */
+/* HIQ display:flex, le row + col te Bootstrap te menaxhoje */
 .kv-policies-cards {
-  display: flex;
-  gap: 40px;
+  gap: 40px; /* opsionale, për hapësirë mes kartave */
 }
 
 /* CARD */
@@ -213,6 +203,7 @@ html{
   border-radius: 22px;
   box-shadow: 0 25px 55px rgba(0,0,0,0.65) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Siguron që kartat mbushin kolonën */
 }
 .kv-policy-card:hover {
   transform: translateY(-10px);
@@ -247,8 +238,6 @@ html{
   background: #e6c200 !important;
   transform: translateY(-4px);
 }
-
-
 /* Footer */
 .kv-footer-section {
     text-align: center;

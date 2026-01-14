@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
@@ -15,28 +15,18 @@
 }
 html{
     scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 #kv{
-  font-family: "Roboto", sans-serif;
+font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
+  overflow-x: hidden;
 }
-.main-header{
-    display: block;
-    color: white;
-    padding: 60px 0;
 
-}
-.main{
-    display: block;
-    color: white;
-    padding: 20px 0;
-
-
-}
 .kv-logo{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 0px;
     background-color:#190727;
@@ -46,6 +36,7 @@ html{
     display: flex;
     text-align: center;
     color: white;
+    padding-top:70px ;
 
 }
 .kv-logo i{
@@ -169,6 +160,9 @@ html{
     display: block;
   }
 }
+/* ------------------------- */
+/* KV CONTACT SECTION        */
+/* ------------------------- */
 .kv-contact-section {
   padding: 100px 20px;
   background: linear-gradient(180deg, #050714, #0b0c1a);
@@ -193,13 +187,10 @@ html{
   font-size: 17px;
 }
 
-/* GRID */
-.kv-contact-grid {
-  display: flex;
 
-}
-
-/* INFO */
+/* ------------------------- */
+/* INFO CARDS                */
+/* ------------------------- */
 .kv-contact-info {
   display: flex;
   flex-direction: column;
@@ -211,10 +202,17 @@ html{
   padding: 25px;
   border-radius: 18px;
   box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+
+.kv-contact-card:hover {
+  transform: translateY(-5px);
 }
 
 .kv-contact-card span {
   font-size: 32px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .kv-contact-card h3 {
@@ -222,7 +220,14 @@ html{
   margin: 10px 0;
 }
 
-/* FORM */
+.kv-contact-card p {
+  color: #ddd;
+  margin: 0;
+}
+
+/* ------------------------- */
+/* FORM                      */
+/* ------------------------- */
 .kv-contact-form {
   background: rgba(26, 27, 43, 0.95);
   padding: 35px;
@@ -262,6 +267,20 @@ html{
 .kv-contact-form button:hover {
   background: #e6c200;
   transform: translateY(-4px);
+}
+
+/* ------------------------- */
+/* RESPONSIVE MOBILE          */
+/* ------------------------- */
+@media (max-width: 991px) {
+  .kv-contact-grid {
+    flex-direction: column;
+  }
+
+  .kv-contact-info,
+  .kv-contact-form {
+    width: 100%;
+  }
 }
 
 /* Footer */

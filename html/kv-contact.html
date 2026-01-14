@@ -16,7 +16,8 @@
 <body id="kv">
 
 <header>
-  <nav class="container kv-nav-container d-flex align-items-center justify-content-between">
+  <section class="kv-contact">
+<nav class="container kv-nav-container d-flex align-items-center justify-content-between">
     <div class="kv-logo d-flex align-items-center gap-2">
       <img src="../images/Gemini_Generated_Image_y5q4qpy5q4qpy5q4.png" alt="logo">
       <p class="m-0"><i>Z</i>ero<i>G</i>ravity</p>
@@ -65,8 +66,8 @@
 
     <div class="kv-contact-grid row g-4">
 
-      <!-- INFO -->
-      <div class="kv-contact-info col-12 col-md-7 d-flex flex-column gap-3">
+      <!-- INFO - majtas -->
+      <div class="kv-contact-info col-12 col-lg-4 d-flex flex-column gap-3">
 
         <div class="kv-contact-card text-center p-3">
           <span>📧</span>
@@ -88,20 +89,43 @@
 
       </div>
 
-      <!-- FORM -->
-      <form class="kv-contact-form col-12 col-md-7 d-flex flex-column gap-3">
+      <!-- FORM - djathtas -->
+      <form class="kv-contact-form col-12 col-lg-8 d-flex flex-column gap-3">
         <input type="text" class="form-control" placeholder="Your Name" required>
         <input type="email" class="form-control" placeholder="Your Email" required>
         <textarea rows="5" class="form-control" placeholder="Your Message"></textarea>
-        <button type="submit" class="btn btn-dark w-100">
+
+        <!-- Butoni hap modal -->
+        <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
           Send Message
         </button>
       </form>
 
     </div>
-
   </div>
+
+  <!-- ------------------------- -->
+  <!-- MODAL WINDOW              -->
+  <!-- ------------------------- -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="contactModalLabel">Thank You!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your message has been sent successfully. 🚀
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
+  
 
 <footer class="kv-footer-section text-center py-3">
   &copy; 2026 zeroGravity. All rights reserved.

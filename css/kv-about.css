@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
@@ -7,39 +7,28 @@
   --accent: #aa50d4;
   --darky:#190727;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
 }
 #kv{
-  font-family: "Roboto", sans-serif;
+font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
+  overflow-x: hidden;
 }
-.header {
-  display: block;
-  color: white;
-  margin-left: 0px;
-  margin-right:0px ;
-}
-.main {
-  display: block;
-  color: white;
-  padding: 20px 0;
-}
-.container{
-  
-  margin-left: 0px;
-  margin-right:0px ;
-}
+
 .kv-logo{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-left: 0px;
-    margin-right:0px ;
     background-color:#190727;
     padding: 20px;
     text-align: left;
@@ -47,6 +36,7 @@
     display: flex;
     text-align: center;
     color: white;
+    padding-top:70px ;
 
 }
 .kv-logo i{
@@ -174,9 +164,7 @@
 /* Container About */
 .kv-about-section {
   align-items: center;
-  background-color: rgba linear-gradient(68, 33, 68, 0.85);
-
- margin-left:80px ;
+  background-color:var(--dark);
   color: white;
   text-align: center;
   min-height: 100vh;
@@ -187,6 +175,7 @@
   font-size: 48px;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  padding-top:40px ;
 }
 
 /* Paragraph */
@@ -219,7 +208,7 @@
 .kv-footer-section {
   text-align: center;
   padding: 20px 0;
-  background-color: #1d0837;
+  background-color: #35175a;
   color: #f4eef7;
   font-size: 14px;
 }
