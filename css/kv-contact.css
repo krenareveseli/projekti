@@ -1,54 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
   --dark: #1c0538;
   --light: #f4eef7;
   --accent: #aa50d4;
-  --darky:#190727;
+  --darky: #190727;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-#kv{
-font-family: 'Montserrat', sans-serif;
+#kv {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
   overflow-x: hidden;
 }
-
-.kv-logo{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 0px;
-    background-color:#190727;
-    padding: 20px;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    text-align: center;
-    color: white;
-    padding-top:70px ;
-
+.kv-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 0px;
+  background-color: #190727;
+  padding: 20px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
 }
-.kv-logo i{
-    color: rgb(99, 38, 99);
-    margin-left:10px ;
+.kv-logo i {
+  color: rgb(99, 38, 99);
+  margin-left: 10px;
 }
-.kv-logo img{
-    width: 90px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 0px;
-    border-radius:90px ;
+.kv-logo img {
+  width: 90px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 0px;
+  border-radius: 90px;
 }
 /* ================= Navbar bazik ================= */
 .kv-nav-container {
@@ -56,7 +54,6 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
   justify-content: space-between;
 }
-
 .kv-nav-bar {
   list-style-type: none;
   margin: 0;
@@ -73,11 +70,9 @@ font-family: 'Montserrat', sans-serif;
   z-index: 1000;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
-
 .kv-nav-bar li {
   position: relative;
 }
-
 .kv-nav-bar li a {
   color: white;
   padding: 14px 18px;
@@ -85,13 +80,11 @@ font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   transition: 0.3s ease, transform 0.3s ease;
 }
-
 .kv-nav-bar li a:hover {
   background-color: var(--accent);
   border-radius: 20px;
   transform: translateY(-2px);
 }
-
 /* ================= Dropdown ================= */
 .kv-dropdown-menu {
   display: none;
@@ -105,16 +98,13 @@ font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
   z-index: 100;
 }
-
 .kv-dropdown-menu li a {
   display: block;
   padding: 10px 15px;
 }
-
 .kv-dropdown:hover .kv-dropdown-menu {
   display: block;
 }
-
 /* ================= Burger menu ================= */
 .kv-burger {
   display: none;
@@ -122,7 +112,6 @@ font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   gap: 5px;
 }
-
 .kv-burger span {
   display: block;
   width: 25px;
@@ -130,7 +119,6 @@ font-family: 'Montserrat', sans-serif;
   background: white;
   border-radius: 2px;
 }
-
 /* ================= Responsive ================= */
 @media (max-width: 900px) {
   .kv-nav-bar {
@@ -139,7 +127,7 @@ font-family: 'Montserrat', sans-serif;
     left: -100%;
     flex-direction: column;
     width: 100%;
-    background: rgba(68,33,68,0.95);
+    background: rgba(68, 33, 68, 0.95);
     transition: left 0.3s ease;
   }
 
@@ -150,7 +138,6 @@ font-family: 'Montserrat', sans-serif;
   .kv-burger {
     display: flex;
   }
-
   /* Dropdown mobile */
   .kv-dropdown-menu {
     position: static;
@@ -161,33 +148,31 @@ font-family: 'Montserrat', sans-serif;
   }
 }
 /* ------------------------- */
-/* KV CONTACT SECTION        */
+/* CONTACT SECTION          */
 /* ------------------------- */
 .kv-contact-section {
   padding: 100px 20px;
   background: linear-gradient(180deg, #050714, #0b0c1a);
   color: #fff;
 }
-
 .kv-contact-container {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
 }
-
+/* ------------------------- */
+/* CONTACT SECTION   H2       */
+/* ------------------------- */
 .kv-contact-section h2 {
   font-size: 40px;
   color: #ffdd00;
   margin-bottom: 10px;
 }
-
 .kv-contact-intro {
   color: #ccc;
   margin-bottom: 60px;
   font-size: 17px;
 }
-
-
 /* ------------------------- */
 /* INFO CARDS                */
 /* ------------------------- */
@@ -196,35 +181,29 @@ font-family: 'Montserrat', sans-serif;
   flex-direction: column;
   gap: 25px;
 }
-
 .kv-contact-card {
   background: rgba(26, 27, 43, 0.95);
   padding: 25px;
   border-radius: 18px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.6);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s;
 }
-
 .kv-contact-card:hover {
   transform: translateY(-5px);
 }
-
 .kv-contact-card span {
   font-size: 32px;
   display: block;
   margin-bottom: 10px;
 }
-
 .kv-contact-card h3 {
   color: #ffdd00;
   margin: 10px 0;
 }
-
 .kv-contact-card p {
   color: #ddd;
   margin: 0;
 }
-
 /* ------------------------- */
 /* FORM                      */
 /* ------------------------- */
@@ -232,12 +211,11 @@ font-family: 'Montserrat', sans-serif;
   background: rgba(26, 27, 43, 0.95);
   padding: 35px;
   border-radius: 22px;
-  box-shadow: 0 25px 55px rgba(0,0,0,0.7);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .kv-contact-form input,
 .kv-contact-form textarea {
   background: #0b0c1a;
@@ -247,12 +225,10 @@ font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 15px;
 }
-
 .kv-contact-form input::placeholder,
 .kv-contact-form textarea::placeholder {
   color: #aaa;
 }
-
 .kv-contact-form button {
   padding: 14px;
   background: #ffdd00;
@@ -263,31 +239,15 @@ font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   transition: transform 0.3s, background 0.3s;
 }
-
 .kv-contact-form button:hover {
   background: #e6c200;
   transform: translateY(-4px);
 }
-
-/* ------------------------- */
-/* RESPONSIVE MOBILE          */
-/* ------------------------- */
-@media (max-width: 991px) {
-  .kv-contact-grid {
-    flex-direction: column;
-  }
-
-  .kv-contact-info,
-  .kv-contact-form {
-    width: 100%;
-  }
-}
-
 /* Footer */
 .kv-footer-section {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1d0837;
-    color: #f4eef7;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1d0837;
+  color: #f4eef7;
+  font-size: 14px;
 }

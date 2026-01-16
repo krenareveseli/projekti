@@ -1,54 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
   --dark: #1c0538;
   --light: #f4eef7;
   --accent: #aa50d4;
-  --darky:#190727;
+  --darky: #190727;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-#kv{
-font-family: 'Montserrat', sans-serif;
+#kv {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
   overflow-x: hidden;
 }
-
-.kv-logo{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 0px;
-    background-color:#190727;
-    padding: 20px;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    text-align: center;
-    color: white;
-    padding-top:70px ;
-
+.kv-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 0px;
+  background-color: #190727;
+  padding: 20px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
 }
-.kv-logo i{
-    color: rgb(99, 38, 99);
-    margin-left:10px ;
+.kv-logo i {
+  color: rgb(99, 38, 99);
+  margin-left: 10px;
 }
-.kv-logo img{
-    width: 90px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 0px;
-    border-radius:90px ;
+.kv-logo img {
+  width: 90px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 0px;
+  border-radius: 90px;
 }
 /* ================= Navbar bazik ================= */
 .kv-nav-container {
@@ -139,7 +137,7 @@ font-family: 'Montserrat', sans-serif;
     left: -100%;
     flex-direction: column;
     width: 100%;
-    background: rgba(68,33,68,0.95);
+    background: rgba(68, 33, 68, 0.95);
     transition: left 0.3s ease;
   }
 
@@ -155,29 +153,27 @@ font-family: 'Montserrat', sans-serif;
   .kv-dropdown-menu {
     position: static;
   }
-
+  /* Dropdown mobile */
   .kv-dropdown-menu.show {
     display: block;
   }
 }
+/* ================= Gallery Section ================= */
 .kv-gallery-section {
   padding: 100px 20px;
   background: radial-gradient(circle at top, #050714, #0b0c1a);
   color: #fff;
   text-align: center;
 }
-
 .kv-gallery-container {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .kv-gallery-section h2 {
   font-size: 40px;
   color: #ffdd00;
   margin-bottom: 10px;
 }
-
 .kv-gallery-intro {
   color: #ccc;
   margin-bottom: 50px;
@@ -185,53 +181,41 @@ font-family: 'Montserrat', sans-serif;
 }
 .kv-gallery-box {
   width: 100%;
-  height: 250px; /* të gjitha fotot brenda një box uniform */
+  height: 250px;
   overflow: hidden;
-  border-radius: 8px; /* opsionale, bukuri */
+  border-radius: 8px;
 }
-
 .kv-gallery-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* foto mbulon box-in pa deformim */
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
-
 .kv-gallery-box:hover img {
-  transform: scale(1.05); /* efekt zoom i lehtë kur hover */
+  transform: scale(1.05);
 }
-
 .kv-gallery-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4); /* overlay me transparencë */
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s ease;
-  border-radius: 8px; /* të njejtën si box */
+  border-radius: 8px;
 }
-
 .kv-gallery-box:hover .kv-gallery-overlay {
   opacity: 1;
 }
-
-/* GRID */
-.kv-gallery-grid {
-  display: grid;
-  
-}
-
 /* ITEM */
 .kv-gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
 }
-
 /* IMAGE */
 .kv-gallery-item img {
   width: 100%;
@@ -244,11 +228,7 @@ font-family: 'Montserrat', sans-serif;
 .kv-gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.8),
-    rgba(0,0,0,0.1)
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1));
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -256,32 +236,22 @@ font-family: 'Montserrat', sans-serif;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 .kv-gallery-overlay h3 {
   color: #ffdd00;
   font-size: 20px;
 }
-
 /* HOVER EFFECTS */
 .kv-gallery-item:hover img {
   transform: scale(1.15);
 }
-
 .kv-gallery-item:hover .kv-gallery-overlay {
   opacity: 1;
 }
-
-/* MOBILE FIX */
-@media (max-width: 600px) {
-  .kv-gallery-section h2 {
-    font-size: 32px;
-  }
-}
 /* Footer */
 .kv-footer-section {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1d0837;
-    color: #f4eef7;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1d0837;
+  color: #f4eef7;
+  font-size: 14px;
 }

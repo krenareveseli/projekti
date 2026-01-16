@@ -185,7 +185,6 @@ font-family: 'Montserrat', sans-serif;
 #suborbital-flights .icon {
   font-size: 50px;
   margin-bottom: 20px;
-}
 
 #suborbital-flights .description {
   font-size: 16px;
@@ -216,7 +215,6 @@ font-family: 'Montserrat', sans-serif;
 #suborbital-flights .flight-details td {
   background-color: #2a2b3b;
 }
-
 /* Butoni */
 #suborbital-flights .book-btn {
   display: inline-block;
@@ -228,7 +226,6 @@ font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   transition: background 0.3s;
 }
-
 #suborbital-flights .book-btn:hover {
   background: #e6c200;
 }
@@ -239,4 +236,5 @@ font-family: 'Montserrat', sans-serif;
     background-color: #1d0837;
     color: #f4eef7;
     font-size: 14px;
+} 
 }

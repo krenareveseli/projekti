@@ -1,54 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
   --dark: #1c0538;
   --light: #f4eef7;
   --accent: #aa50d4;
-  --darky:#190727;
+  --darky: #190727;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-#kv{
-font-family: 'Montserrat', sans-serif;
+#kv {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
   overflow-x: hidden;
 }
 
-.kv-logo{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 0px;
-    background-color:#190727;
-    padding: 20px;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    text-align: center;
-    color: white;
-    padding-top:70px ;
-
+.kv-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 0px;
+  background-color: #190727;
+  padding: 20px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
 }
-.kv-logo i{
-    color: rgb(99, 38, 99);
-    margin-left:10px ;
+.kv-logo i {
+  color: rgb(99, 38, 99);
+  margin-left: 10px;
 }
-.kv-logo img{
-    width: 90px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 0px;
-    border-radius:90px ;
+.kv-logo img {
+  width: 90px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 0px;
+  border-radius: 90px;
 }
 /* ================= Navbar bazik ================= */
 .kv-nav-container {
@@ -56,7 +55,6 @@ font-family: 'Montserrat', sans-serif;
   align-items: center;
   justify-content: space-between;
 }
-
 .kv-nav-bar {
   list-style-type: none;
   margin: 0;
@@ -73,11 +71,9 @@ font-family: 'Montserrat', sans-serif;
   z-index: 1000;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
-
 .kv-nav-bar li {
   position: relative;
 }
-
 .kv-nav-bar li a {
   color: white;
   padding: 14px 18px;
@@ -85,13 +81,11 @@ font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   transition: 0.3s ease, transform 0.3s ease;
 }
-
 .kv-nav-bar li a:hover {
   background-color: var(--accent);
   border-radius: 20px;
   transform: translateY(-2px);
 }
-
 /* ================= Dropdown ================= */
 .kv-dropdown-menu {
   display: none;
@@ -105,7 +99,6 @@ font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
   z-index: 100;
 }
-
 .kv-dropdown-menu li a {
   display: block;
   padding: 10px 15px;
@@ -122,7 +115,6 @@ font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   gap: 5px;
 }
-
 .kv-burger span {
   display: block;
   width: 25px;
@@ -130,7 +122,6 @@ font-family: 'Montserrat', sans-serif;
   background: white;
   border-radius: 2px;
 }
-
 /* ================= Responsive ================= */
 @media (max-width: 900px) {
   .kv-nav-bar {
@@ -139,7 +130,7 @@ font-family: 'Montserrat', sans-serif;
     left: -100%;
     flex-direction: column;
     width: 100%;
-    background: rgba(68,33,68,0.95);
+    background: rgba(68, 33, 68, 0.95);
     transition: left 0.3s ease;
   }
 
@@ -160,6 +151,7 @@ font-family: 'Montserrat', sans-serif;
     display: block;
   }
 }
+/* ---------- TURISM SECTION--------------- */
 .kv-tourism-section {
   padding: 90px 20px;
   background: linear-gradient(180deg, #050714, #0e1028);
@@ -188,7 +180,7 @@ font-family: 'Montserrat', sans-serif;
   background: rgba(26, 27, 43, 0.92);
   padding: 40px;
   border-radius: 22px;
-  box-shadow: 0 20px 55px rgba(0,0,0,0.65);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.65);
 }
 
 .kv-tourism-icon {
@@ -243,9 +235,9 @@ font-family: 'Montserrat', sans-serif;
 }
 /* Footer */
 .kv-footer-section {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1d0837;
-    color: #f4eef7;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1d0837;
+  color: #f4eef7;
+  font-size: 14px;
 }

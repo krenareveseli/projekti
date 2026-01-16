@@ -1,54 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 :root {
   --primary: #632679;
   --secondary: #ae96b2;
   --dark: #1c0538;
   --light: #f4eef7;
   --accent: #aa50d4;
-  --darky:#190727;
+  --darky: #190727;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
-html{
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-#kv{
-font-family: 'Montserrat', sans-serif;
+#kv {
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   background-color: var(--darky);
   color: var(--light);
   overflow-x: hidden;
 }
 
-.kv-logo{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 0px;
-    background-color:#190727;
-    padding: 20px;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    text-align: center;
-    color: white;
-    padding-top:70px ;
-
+.kv-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 0px;
+  background-color: #190727;
+  padding: 20px;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  text-align: center;
+  color: white;
+  padding-top: 70px;
 }
-.kv-logo i{
-    color: rgb(99, 38, 99);
-    margin-left:10px ;
+.kv-logo i {
+  color: rgb(99, 38, 99);
+  margin-left: 10px;
 }
-.kv-logo img{
-    width: 90px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 0px;
-    border-radius:90px ;
+.kv-logo img {
+  width: 90px;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 0px;
+  border-radius: 90px;
 }
 /* ================= Navbar bazik ================= */
 .kv-nav-container {
@@ -139,7 +138,7 @@ font-family: 'Montserrat', sans-serif;
     left: -100%;
     flex-direction: column;
     width: 100%;
-    background: rgba(68,33,68,0.95);
+    background: rgba(68, 33, 68, 0.95);
     transition: left 0.3s ease;
   }
 
@@ -186,24 +185,23 @@ font-family: 'Montserrat', sans-serif;
 
 /* GRID */
 .kv-team-grid {
-    display: flex;           /* Bootstrap row e kontrollon */
+  display: flex;
   flex-wrap: wrap;
 }
-
 /* CARD */
 .kv-team-card {
   background: rgba(26, 27, 43, 0.95);
   border-radius: 22px;
-  box-shadow: 0 25px 55px rgba(0,0,0,0.65);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.65);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  padding: 20px 16px;     /* ⬅️ ma e vogël */
-  max-width: 460px;      /* ⬅️ s’lejon me u shtri shumë */
+  padding: 20px 16px;
+  max-width: 460px;
   margin: 0 auto;
 }
 
 .kv-team-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 30px 65px rgba(0,0,0,0.8);
+  box-shadow: 0 30px 65px rgba(0, 0, 0, 0.8);
 }
 
 /* IMAGE */
@@ -227,9 +225,9 @@ font-family: 'Montserrat', sans-serif;
 }
 /* Footer */
 .kv-footer-section {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1d0837;
-    color: #f4eef7;
-    font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #1d0837;
+  color: #f4eef7;
+  font-size: 14px;
 }
