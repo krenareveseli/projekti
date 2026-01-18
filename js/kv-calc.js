@@ -11,36 +11,51 @@ const planetGravity = {
 };
 
 const planetIcons = {
-  Mercury: "☿",
-  Venus: "♀",
-  Mars: "♂",
-  Jupiter: "♃",
-  Saturn: "♄",
-  Uranus: "♅",
-  Neptune: "♆",
-  Moon: "🌕",
-  Pluto: "♇",
+  Mercury: "../images/mercury.png",
+  Venus: "../images/venus.png",
+  Mars: "../images/mars.png",
+  Jupiter: "../images/jupiter.png",
+  Saturn: "../images/saturn1.png",
+  Uranus: "../images/uranus.png",
+  Neptune: "../images/neptune.png",
+  Moon: "../images/full-moon.png",
+  Pluto: "../images/pluto.png",
 };
 
 document.getElementById("calculateWeight").addEventListener("click", () => {
-  const earthWeight = parseFloat(document.getElementById("earthWeight").value);
+  const earthWeightInput = document.getElementById("earthWeight");
   const resultsDiv = document.getElementById("planetResults");
-  resultsDiv.innerHTML = ""; // pastro rezultate
 
-  if (!earthWeight || earthWeight <= 0) {
-    resultsDiv.innerHTML = "<p>Please enter a valid weight!</p>";
+  const earthWeight = parseFloat(earthWeightInput.value);
+  resultsDiv.innerHTML = "";
+
+  if (isNaN(earthWeight) || earthWeight <= 0) {
+    resultsDiv.innerHTML = `
+      <p class="text-danger text-center">
+        Please enter a valid weight!
+      </p>
+    `;
     return;
   }
 
   for (const planet in planetGravity) {
     const weightOnPlanet = (earthWeight * planetGravity[planet]).toFixed(1);
-    const card = document.createElement("div");
-    card.className = "kv-planet-card";
-    card.innerHTML = `
-      <div class="kv-planet-icon">${planetIcons[planet]}</div>
-      <h3>${planet}</h3>
-      <p>${weightOnPlanet} kg</p>
+
+    const col = document.createElement("div");
+    col.className = "col";
+
+    col.innerHTML = `
+      <div class="kv-planet-card text-center h-100">
+        <img 
+          src="${planetIcons[planet]}" 
+          alt="${planet}" 
+          class="kv-planet-icon"
+        >
+        <h3>${planet}</h3>
+        <p>${weightOnPlanet} kg</p>
+      </div>
     `;
-    resultsDiv.appendChild(card);
+
+    resultsDiv.appendChild(col);
   }
 });

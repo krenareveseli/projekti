@@ -95,7 +95,7 @@ html {
   padding: 0;
   min-width: 150px;
   border-radius: 10px;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .kv-dropdown-menu li a {
@@ -169,7 +169,6 @@ html {
 }
 .container {
   position: relative;
-  z-index: 1;
 }
 
 .section-title {
@@ -188,8 +187,7 @@ html {
   background-color: var(--darky);
   border: none;
   color: #fff;
-  z-index: 1;
-  position: relative;
+ 
 }
 .service-card:hover,
 .card-kv:hover {

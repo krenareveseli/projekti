@@ -146,6 +146,9 @@ font-family: 'Montserrat', sans-serif;
     display: block;
   }
 }
+.kv-about-extra-section {
+  background: radial-gradient(circle at top, #2a0d45, #190727);
+}
 /* Container About */
 .kv-about-section {
   align-items: center;
