@@ -195,7 +195,7 @@ html {
   margin-left: 0px;
 }
 .kv-hero-section h1 {
-  font-size: 70px;
+  font-size: 40px;
   margin-bottom: 20px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-left: 0px;
@@ -203,7 +203,7 @@ html {
 .kv-hero-section i {
   color: var(--secondary);
   margin-left: 0px;
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
 }
 
