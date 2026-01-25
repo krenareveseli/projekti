@@ -373,10 +373,6 @@ p {
   backdrop-filter: blur(8px);
 }
 
-.kv-premium-card:hover {
-  transform: scale(1.08) translateY(-7px);
-  box-shadow: 0 0 40px #ff33cc, 0 0 80px #ff77ff, 0 0 120px #c71585;
-}
 /* TEAM */
 .kv-team-section {
   padding: 30px 20px;

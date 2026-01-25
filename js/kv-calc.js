@@ -27,7 +27,6 @@ document.getElementById("calculateWeight").addEventListener("click", () => {
   const resultsDiv = document.getElementById("planetResults");
 
   const earthWeight = parseFloat(earthWeightInput.value);
-  resultsDiv.innerHTML = "";
 
   if (isNaN(earthWeight) || earthWeight <= 0) {
     resultsDiv.innerHTML = `

@@ -228,7 +228,7 @@ html {
 }
 
 .kv-orbital-btn:hover {
-  background: #e6c200;
+  background: #e6c200 !important;
   transform: translateY(-4px);
 }
 /* Footer */
